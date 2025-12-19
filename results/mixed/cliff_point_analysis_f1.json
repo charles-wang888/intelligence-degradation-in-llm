@@ -1,0 +1,53 @@
+{
+  "gradient": {
+    "method": "gradient",
+    "detected": false,
+    "reason": "找到37个峰值但均因往后10%范围内有上升而被排除"
+  },
+  "second_derivative": {
+    "method": "second_derivative",
+    "detected": false,
+    "reason": "找到37个峰值但均因往后10%范围内有上升而被排除"
+  },
+  "binned": {
+    "method": "binned",
+    "detected": true,
+    "cliff_ratio": 0.4510046005249023,
+    "cliff_ratio_percent": 45.100460052490234,
+    "peak_value": 0.6101111490837716,
+    "before_performance": 0.6101111490837716,
+    "after_performance": 0.5637760480043145,
+    "drop_percentage": 0.07594534397386514,
+    "sustained_decline": false,
+    "n_bins": 20
+  },
+  "percentile": {
+    "method": "percentile",
+    "detected": false,
+    "reason": "找到37个峰值但均因往后10%范围内有上升而被排除"
+  },
+  "sliding_window": {
+    "method": "sliding_window",
+    "detected": false,
+    "reason": "找到37个峰值但均因往后10%范围内有上升而被排除"
+  },
+  "summary": {
+    "n_methods_detected": 1,
+    "n_methods_total": 5,
+    "final_cliff_ratio": 0.4510046005249023,
+    "final_cliff_ratio_percent": 45.100460052490234,
+    "average_cliff_ratio": 0.4510046005249023,
+    "average_cliff_ratio_percent": 45.100460052490234,
+    "median_cliff_ratio": 0.4510046005249023,
+    "median_cliff_ratio_percent": 45.100460052490234,
+    "std_cliff_ratio": 0.0,
+    "min_cliff_ratio": 0.4510046005249023,
+    "max_cliff_ratio": 0.4510046005249023,
+    "consistency": "高",
+    "confidence": "高",
+    "detected_methods": [
+      "binned"
+    ],
+    "all_candidate_peaks": []
+  }
+}

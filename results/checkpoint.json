@@ -1,0 +1,3575 @@
+{
+  "results": [
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "Miss Delmar 是文档中提到的Madeline Hall的女主人，她的全名是 Honourable Miss Delmar。她是已故Lord de Versely的妹妹和现任Earl的姑妈。她在故事开始时居住在Madeline Hall，并且有一个弟弟，Honourable Captain Delmar，他是一位退役海军上校。",
+      "reference": "the elderly spinster aunt of the Earl de Verseley and Captain Delmar",
+      "metrics": {
+        "f1": 0.43902439024390244
+      },
+      "elapsed_time": 4.999927282333374,
+      "timestamp": "2025-12-18T21:02:37.538693",
+      "sample_idx": 0,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未提及Arabella Mason是否结婚以及嫁给谁，只提到了她的性格和家庭背景。因此没有足够的信息来回答这个问题。",
+      "reference": "Ben Keene, Delmar's valet",
+      "metrics": {
+        "f1": 0.2608695652173913
+      },
+      "elapsed_time": 2.3122856616973877,
+      "timestamp": "2025-12-18T21:02:40.353202",
+      "sample_idx": 1,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "Percival Keene's name is not derived from any specific event or origin in the given text. The text provides information about the background and characters associated with the story \"Percival Keene,\" but it does not explain how Percival Keene gets his name. The title of the book itself suggests that Keene might be one of the main characters, possibly a surname, rather than his given first name.",
+      "reference": "Percival is Captain Delmar's first name, and Keene is Ben's last name",
+      "metrics": {
+        "f1": 0.8085106382978724
+      },
+      "elapsed_time": 2.6381936073303223,
+      "timestamp": "2025-12-18T21:02:43.493530",
+      "sample_idx": 2,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文本内容，没有提到任何关于“bully”（欺霸者）偷窃Percival午餐的故事情节或角色描述。因此，无法从给定文本中得出该问题的答案。",
+      "reference": "his teacher, Mr. O'Gallagher",
+      "metrics": {
+        "f1": 0.15
+      },
+      "elapsed_time": 2.4056143760681152,
+      "timestamp": "2025-12-18T21:02:46.400429",
+      "sample_idx": 3,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Percival与O'Gallagher之间关于火药的事，所以无法根据给定的文本内容来回答这个问题。该段落可能出自另一本书或故事，而当前提供的信息不足以做出相关问题的回答。",
+      "reference": "He sets them on fire with the teacher sitting on them",
+      "metrics": {
+        "f1": 0.18823529411764706
+      },
+      "elapsed_time": 2.433680295944214,
+      "timestamp": "2025-12-18T21:02:49.335300",
+      "sample_idx": 4,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文档内容，没有提到Percival是如何说服海盗团饶恕某人的信息。文档主要讲述了《佩里卡维·凯恩》这本书的一些背景资料和主角——佩里卡维·凯恩的生活环境及其家庭成员的情况。因此，无法从给定的文本中回答关于谁是佩里卡维说服海盗团饶恕的人的问题。",
+      "reference": "a rich Dutch merchant and his daughter Minnie",
+      "metrics": {
+        "f1": 0.0970873786407767
+      },
+      "elapsed_time": 2.6058435440063477,
+      "timestamp": "2025-12-18T21:02:52.442553",
+      "sample_idx": 5,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未提及Percival如何救Captain Delmar的生命。根据提供的文档，Percival Keene 是一个小说主人公的名字，与救下Delmar船长的冒险故事无关。文档主要描述了Madeline Hall及其家族成员的故事，并没有涉及关于Percival如何拯救Captain Delmar的情节。",
+      "reference": "When the captain is ill, Percival takes his place in a duel with a French officer",
+      "metrics": {
+        "f1": 0.3111111111111111
+      },
+      "elapsed_time": 2.574930191040039,
+      "timestamp": "2025-12-18T21:02:55.519156",
+      "sample_idx": 6,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Percival的妈妈，也没有提及任何关于她承认的惊人消息的内容。因此，根据提供的文本信息，无法回答这个问题。",
+      "reference": "Captain Delmar is Percival's father",
+      "metrics": {
+        "f1": 0.24242424242424243
+      },
+      "elapsed_time": 2.3042194843292236,
+      "timestamp": "2025-12-18T21:02:58.325630",
+      "sample_idx": 7,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Percival被法国人俘虏的相关内容，因此没有足够的信息来回答这个问题。文本主要讲述了佩里卡·基恩（Percival Keene）家族的故事及其成员之间的关系。",
+      "reference": "he is sentenced to execution",
+      "metrics": {
+        "f1": 0.1234567901234568
+      },
+      "elapsed_time": 2.4381332397460938,
+      "timestamp": "2025-12-18T21:03:01.265112",
+      "sample_idx": 8,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Percival Keene这个人物，也没有叙述到任何故事的结局或Percival收到的消息。因此，根据给定的文本内容，无法回答Percival在故事结束时收到了什么消息。文本主要介绍了一个叫Percival Keene的故事作者Captain Frederick Marryat的一些背景信息，以及Madeline Hall及其居住者的情况。",
+      "reference": "He has been granted the right to use his father's name, Delmar",
+      "metrics": {
+        "f1": 0.23762376237623759
+      },
+      "elapsed_time": 2.6480774879455566,
+      "timestamp": "2025-12-18T21:03:04.416682",
+      "sample_idx": 9,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "Madeline Hall是de Versely家族的名号房屋。",
+      "reference": "Madeline Hall",
+      "metrics": {
+        "f1": 0.5777777777777777
+      },
+      "elapsed_time": 2.219237804412842,
+      "timestamp": "2025-12-18T21:03:07.138373",
+      "sample_idx": 10,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "Madeline Hall is occupied by an elderly spinster named the Honourable Miss Delmar. She resides there with her nephew, Honorably Captain Delmar, and also includes about 12,000 acres of land under her possession. Miss Delmar is the sister of the late Lord de Versely and aunt to the present earl.",
+      "reference": "Miss Delmar",
+      "metrics": {
+        "f1": 0.0909090909090909
+      },
+      "elapsed_time": 2.5884056091308594,
+      "timestamp": "2025-12-18T21:03:10.228514",
+      "sample_idx": 11,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提到Capitan Delmar建议Ben秘密娶谁为妻的内容，所以无法根据给定的文本信息来作答。",
+      "reference": "Arabella",
+      "metrics": {
+        "f1": 0.19607843137254902
+      },
+      "elapsed_time": 2.260920763015747,
+      "timestamp": "2025-12-18T21:03:12.992111",
+      "sample_idx": 12,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未提及Ben和Arabella的儿子信息，因此没有足够的信息来回答这个问题。根据提供的文本，Ben是Delmar家族的一员，而Arabella是Mason家族的成员，但他们的子女关系并没有在文中提到。",
+      "reference": "Percival Keene",
+      "metrics": {
+        "f1": 0.1492537313432836
+      },
+      "elapsed_time": 2.4323012828826904,
+      "timestamp": "2025-12-18T21:03:15.926905",
+      "sample_idx": 13,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文档内容，没有提到Percival做什么事导致他去了学校或他的祖母，来回答这个问题缺乏相关的信息。",
+      "reference": "He bit his grandmother.",
+      "metrics": {
+        "f1": 0.125
+      },
+      "elapsed_time": 2.2733652591705322,
+      "timestamp": "2025-12-18T21:03:18.701959",
+      "sample_idx": 14,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文本内容，没有提到Percival如何说服海盗船长饶恕某人的事，因此无法从给定的文本中得出答案来回答这个问题。文本主要讲述了Madeline Hall的历史、家族成员以及Miss Arabella Mason的生活状况，并未涉及任何关于Percival劝说海盗饶恕人的情节。",
+      "reference": "A Dutch merchant and his daughter",
+      "metrics": {
+        "f1": 0.21568627450980393
+      },
+      "elapsed_time": 2.5889203548431396,
+      "timestamp": "2025-12-18T21:03:21.793271",
+      "sample_idx": 15,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有直接提到谁在Lord de Versely的兄弟去世后成为Lord de Versely，所以根据给定的信息无法回答这个问题。我们需要更多信息来确定这一点。",
+      "reference": "Colonial Delmar",
+      "metrics": {
+        "f1": 0.1791044776119403
+      },
+      "elapsed_time": 2.351388931274414,
+      "timestamp": "2025-12-18T21:03:24.646282",
+      "sample_idx": 16,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文档内容，没有提到Percival被提升为任何职位或角色的信息，文档主要讲述了Percival Keene的故事和他的朋友、家人以及他所处的社会背景，并未提及Percival在法国战船服役后升职的情况。因此无法从给定的文本中得出正确答案。",
+      "reference": "Capitan",
+      "metrics": {
+        "f1": 0.10989010989010989
+      },
+      "elapsed_time": 2.5422065258026123,
+      "timestamp": "2025-12-18T21:03:27.691030",
+      "sample_idx": 17,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未提及Percival是否提出婚约或与任何人订婚。根据提供的信息，无法确定Percival向谁求婚。",
+      "reference": "Minni",
+      "metrics": {
+        "f1": 0.04545454545454545
+      },
+      "elapsed_time": 2.2807445526123047,
+      "timestamp": "2025-12-18T21:03:30.474594",
+      "sample_idx": 18,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Percival Keene在故事的结尾获得了什么，因此没有足够的信息来回答“What is Percival granted at the end of the story?”这个问题。根据提供的文本内容，我们主要了解的是《佩奇弗雷德·马里亚特爵士》（即《佩奇威肯》）的故事背景和主角之一Captain Delmar的相关情况，并未涉及Percival Keene。",
+      "reference": "The arms and name of Delmar",
+      "metrics": {
+        "f1": 0.22807017543859648
+      },
+      "elapsed_time": 2.6620726585388184,
+      "timestamp": "2025-12-18T21:03:33.648148",
+      "sample_idx": 19,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据文档的内容，Arabella Manson 是一位 18 岁的年轻女子，她是前德维尔家族管家的女儿，也是德维尔勋爵姐姐的家庭女教师黛玛莉·马歇尔小姐的表妹。她被认为非常漂亮，并且经常查看镜子以确定是否有比自己更喜欢的脸庞。",
+      "reference": "Miss Delma house guest",
+      "metrics": {
+        "f1": 0.15053763440860213
+      },
+      "elapsed_time": 2.557748794555664,
+      "timestamp": "2025-12-18T21:03:36.708479",
+      "sample_idx": 20,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "Percival Keene",
+      "reference": "His Captain Delmar valet",
+      "metrics": {
+        "f1": 0.7692307692307692
+      },
+      "elapsed_time": 2.1519224643707275,
+      "timestamp": "2025-12-18T21:03:39.363013",
+      "sample_idx": 21,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何人秘密结婚的事情，因此没有足够的信息来回答这个问题。该问题似乎与提供的文本内容不符或不存在于文中。",
+      "reference": "Arabella Manson",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.3001883029937744,
+      "timestamp": "2025-12-18T21:03:42.165505",
+      "sample_idx": 22,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "Percival Keene is not mentioned in the provided text. The text appears to be about a book titled \"Percival Keene\" written by Captain Frederick Marryat, and it provides information about the life of Captain Frederick Marryat and details about Madeline Hall. There is no specific information given about Percival Keene in this particular text.",
+      "reference": "Arabella and Been son",
+      "metrics": {
+        "f1": 0.5405405405405406
+      },
+      "elapsed_time": 2.57387638092041,
+      "timestamp": "2025-12-18T21:03:45.240913",
+      "sample_idx": 23,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Percival被送往的学校信息，因此无法根据给定文本内容来回答这个问题。",
+      "reference": "Mr O'Gallagher school",
+      "metrics": {
+        "f1": 0.1818181818181818
+      },
+      "elapsed_time": 2.2537834644317627,
+      "timestamp": "2025-12-18T21:03:47.996647",
+      "sample_idx": 24,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提到Percival的生物学父亲是谁，因此无法根据给定文本内容来确定Percival的生物学父亲身份。",
+      "reference": "Captain  Delmar",
+      "metrics": {
+        "f1": 0.2745098039215686
+      },
+      "elapsed_time": 2.298499345779419,
+      "timestamp": "2025-12-18T21:03:50.797323",
+      "sample_idx": 25,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到H.M. Calliope如何对待Percival，以及是否将其作为囚犯看待的情况。因此，根据提供的文档内容，无法回答为什么H.M. Calliope会将Percival捉为俘虏的问题。这可能是一个基于其他来源的假设性问题。",
+      "reference": "Because Percival skin was dyed tan",
+      "metrics": {
+        "f1": 0.1956521739130435
+      },
+      "elapsed_time": 2.5176799297332764,
+      "timestamp": "2025-12-18T21:03:53.817139",
+      "sample_idx": 26,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Percival Keene reunion的事情，因此没有足够的信息来回答这个问题。题目可能与文本内容不符或需要更具体的信息来进行解答。",
+      "reference": "Minnie",
+      "metrics": {
+        "f1": 0.09999999999999999
+      },
+      "elapsed_time": 2.292437791824341,
+      "timestamp": "2025-12-18T21:03:56.611349",
+      "sample_idx": 27,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到名为Minnie的人物，因此无法根据给定的文本信息回答“Who was Minnie?”这个问题。",
+      "reference": "A Heiress",
+      "metrics": {
+        "f1": 0.2352941176470588
+      },
+      "elapsed_time": 2.2701876163482666,
+      "timestamp": "2025-12-18T21:03:59.384254",
+      "sample_idx": 28,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提到探险者最终返回哪个国家的情节，因此无法回答他们最终回到哪个国家的问题。文本主要描述了五周在气球上的旅程和发现，但未提供旅行结束后的详细信息。",
+      "reference": "England",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.65647029876709,
+      "timestamp": "2025-12-18T21:04:02.542727",
+      "sample_idx": 29,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提到任何物种已经灭绝但又有一只被杀死的情况，因此无法从给定的文本中得出这个问题的答案。文本主要描述了《五星期在气球上》这本书的内容，包括书中的章节和概要等信息，未包含与已灭绝物种相关的细节。",
+      "reference": "A Bluebuck antelope",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.526029348373413,
+      "timestamp": "2025-12-18T21:04:05.572229",
+      "sample_idx": 30,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未提及有任何鸟类攻击了热气球。因此，没有足够的信息来回答这个问题。文本主要讲述了关于热气球旅行的故事和相关细节，并未涉及任何鸟类对热气球的攻击情况。",
+      "reference": "Condors",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.413691282272339,
+      "timestamp": "2025-12-18T21:04:08.488797",
+      "sample_idx": 31,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文本内容，文本中并未提及探险者在找不到水的情况下是如何被“困住”的具体位置。文本主要描述了探索的路线和一些情节，但没有明确提到他们何时或在哪种情况下断水并被困。所以无法从给定信息中得出答案。",
+      "reference": "The Sahara desert",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.528674364089966,
+      "timestamp": "2025-12-18T21:04:11.520242",
+      "sample_idx": 32,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何关于试图袭击或对传教士进行谋杀的细节。因此，无法根据给定文本的内容来确定在探险者到达之前，那个部落打算如何对待传教士。文本主要描述了这次气球旅行的过程和冒险经历，并未提及与传教士相关的具体冲突情节。",
+      "reference": "Sacrifice him",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.5431737899780273,
+      "timestamp": "2025-12-18T21:04:14.565187",
+      "sample_idx": 33,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提及任何关于探索水源的内容，因此无法根据给定的文本内容回答“The initial exploration is to find the source of what?”这个问题。文本主要描述了一次气球旅行的故事和情节安排，并没有提到要寻找水源作为初始探索的目的。请确认是否有其他文本可以帮助解答您的问题。",
+      "reference": "The Nile river",
+      "metrics": {
+        "f1": 0.15384615384615383
+      },
+      "elapsed_time": 2.507955312728882,
+      "timestamp": "2025-12-18T21:04:17.575073",
+      "sample_idx": 34,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何被描述为沙漠但实际上实际上是萨瓦纳（savanna）的区域。根据给定的信息，文档主要描述了一次气球之旅，并没有提及地理上的错误或混淆。",
+      "reference": "The interior of Africa near modern day Central African Republic.",
+      "metrics": {
+        "f1": 0.05128205128205128
+      },
+      "elapsed_time": 2.398616313934326,
+      "timestamp": "2025-12-18T21:04:20.476509",
+      "sample_idx": 35,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文中并未提及Dr. Ferguson的其他两位同伴的名字，只提到了Dr. Ferguson本人。故无法提供Dr. Ferguson的其他两位同伴的名字。",
+      "reference": "Joe and Richard \"Dick\" Kennedy",
+      "metrics": {
+        "f1": 0.23529411764705885
+      },
+      "elapsed_time": 2.352274179458618,
+      "timestamp": "2025-12-18T21:04:23.330824",
+      "sample_idx": 36,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到旅行开始的具体地点是在东海岸的哪个位置，因此无法直接从给出的信息中得知“这个旅行”在东海岸的起点是哪里。需要更多的信息来确定这一点。",
+      "reference": "Zanzibar",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.3890247344970703,
+      "timestamp": "2025-12-18T21:04:26.221564",
+      "sample_idx": 37,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有明确提到Dr. Samuel Ferguson和他的同伴在氢气球中旅行的具体地点或目的地。文本主要描述了这部小说的内容和作者的意图，包括书中包含的非洲探险旅程概要以及人物之间的对话等情节。因此无法从给定的信息中得知他们在氢气球中具体前往了哪里。",
+      "reference": "The African continent ",
+      "metrics": {
+        "f1": 0.1320754716981132
+      },
+      "elapsed_time": 2.6501944065093994,
+      "timestamp": "2025-12-18T21:04:29.382885",
+      "sample_idx": 38,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提到任何关于Dr. Ferguson的仆人或他是否有仆人的信息，因此无法确定谁是Dr. Ferguson的侍从。",
+      "reference": "Joe. ",
+      "metrics": {
+        "f1": 0.13043478260869565
+      },
+      "elapsed_time": 2.33185076713562,
+      "timestamp": "2025-12-18T21:04:32.217094",
+      "sample_idx": 39,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提及具体使用了哪种气体来填充气球。文本主要描述了一个名为Dr. Ferguson的医生和两位英国同伴乘坐热气球穿越非洲的情节，但并未详细说明所使用的气体类型。",
+      "reference": "Hydrogen",
+      "metrics": {
+        "f1": 0.15584415584415584
+      },
+      "elapsed_time": 2.4124765396118164,
+      "timestamp": "2025-12-18T21:04:35.132263",
+      "sample_idx": 40,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有明确提到“Five Weeks in a Balloon”这本书的开头部分，主要描述了作者和几位朋友之间的友谊以及他们准备进行非洲之旅的内容。因此，无法直接从给定文本内容判断出探险家们在旅程开始时的主要目标或关注点。需要更多的上下文信息来回答这个问题。",
+      "reference": "They are seeking out the source of the Nile River. ",
+      "metrics": {
+        "f1": 0.18487394957983191
+      },
+      "elapsed_time": 2.543588399887085,
+      "timestamp": "2025-12-18T21:04:38.177999",
+      "sample_idx": 41,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有直接描述非洲内部的景观信息。文本主要讲述了三位英国人在热气球上探索非洲的故事，包括了对一些探险家和地理学观察家的研究及评论。因此，没有足够的信息来确定是否使用某种特定类型的景观来描述非洲内部。",
+      "reference": "Desert ",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.506915330886841,
+      "timestamp": "2025-12-18T21:04:41.187260",
+      "sample_idx": 42,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到当气球被秃鹰追赶时，Joe 决定做什么的情节。因此，根据提供的信息，这个问题没有合适的答案。",
+      "reference": "Joe jumps out of the balloon. ",
+      "metrics": {
+        "f1": 0.12903225806451613
+      },
+      "elapsed_time": 2.329338788986206,
+      "timestamp": "2025-12-18T21:04:44.018820",
+      "sample_idx": 43,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文本内容，Dick Kennedy的职业并没有明确提到。文本主要描述了一次热气球之旅，讲述了三位英国人在非洲的探险旅程，但没有直接指出Dick Kennedy的具体职业或身份。所以无法从给定信息中确定Dick Kennedy的专业背景。",
+      "reference": "He is a professional hunter. ",
+      "metrics": {
+        "f1": 0.0898876404494382
+      },
+      "elapsed_time": 2.462071180343628,
+      "timestamp": "2025-12-18T21:04:46.984039",
+      "sample_idx": 44,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何先前在撒哈拉和乍得地区周围进行探险的探索者。所提供的文本主要讲述了Jules Verne的小说《气球上的五星期》的内容，包括一些角色介绍、探险旅程规划以及几章简短的情节概要。因此，没有足够的信息来回答关于特定探险家的问题。",
+      "reference": "Heinrich Barth ",
+      "metrics": {
+        "f1": 0.07407407407407406
+      },
+      "elapsed_time": 2.5666496753692627,
+      "timestamp": "2025-12-18T21:04:50.052564",
+      "sample_idx": 45,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有明确提到探险家返回哪个国家的情节，只描述了他们从非洲出发，并在文中讲述了他们的非洲之旅和冒险经历。因此无法确定他们是回到哪个国家。根据给出的信息，我们只能知道他们是从非洲开始这次探险的。",
+      "reference": "England",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.4612667560577393,
+      "timestamp": "2025-12-18T21:04:53.026013",
+      "sample_idx": 46,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未明确说明探险家在非洲的旅行开始于哪个地点。根据提供的章节标题，可以推测他们可能从英国出发，然后前往非洲进行探险。具体开始的确切地点信息没有给出。",
+      "reference": "Zanzibar/on the east coast",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.4044103622436523,
+      "timestamp": "2025-12-18T21:04:55.932459",
+      "sample_idx": 47,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提到探险家们如何以及为什么救了传教士的信息。因此，根据提供的文本内容，无法回答这个问题。文本主要描述了五周在热气球上的冒险旅程及其相关背景故事，并没有详细讲述关于救援传教士的情节或原因。",
+      "reference": "The native tribe was preparing to sacrifice him. ",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.516453981399536,
+      "timestamp": "2025-12-18T21:04:58.950557",
+      "sample_idx": 48,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未明确提及谁与Samuel Ferguson博士一同前往非洲旅行，只提到了Dr.Ferguson的三名英国朋友参与了这次旅行和发现之旅。因此我们无法从给定的文本信息中得知具体是哪几位英国人陪同Dr.Samuel Ferguson进行他的非洲之旅。",
+      "reference": "His friend, Richard \"Dick\" Kennedy and his manservant Joe",
+      "metrics": {
+        "f1": 0.20618556701030924
+      },
+      "elapsed_time": 2.554245948791504,
+      "timestamp": "2025-12-18T21:05:02.006738",
+      "sample_idx": 49,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文本内容，Dr. Samuel Ferguson 的职业是医生（Dr. Ferguson）。文本中提到这部作品是以他的笔记编写的，并由Jules Verne从这些笔记改编而成。",
+      "reference": "He was a scholar and an explorer",
+      "metrics": {
+        "f1": 0.26865671641791045
+      },
+      "elapsed_time": 2.3697080612182617,
+      "timestamp": "2025-12-18T21:05:04.880282",
+      "sample_idx": 50,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Joe从气球上跳下来的原因，因此无法给出准确的答案。文本主要描述了小说的情节和故事情节，并没有详细说明Joe在故事中的具体行动或为何要采取某些行动。",
+      "reference": "Because it was attacked by condors",
+      "metrics": {
+        "f1": 0.05333333333333334
+      },
+      "elapsed_time": 2.4052553176879883,
+      "timestamp": "2025-12-18T21:05:07.787776",
+      "sample_idx": 51,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文本内容，Dr. Samuel Ferguson的非洲之旅目的是进行探险和发现，但没有明确提及旅行的具体目的是否为讽刺现代非洲旅游书籍。文本更多地描述了这次旅程的内容、人物及其中的部分趣事。因此，我们可以说其主要目的在于探索未知的非洲地区，但并未直接指出是用于讽刺还是其他目的。",
+      "reference": "To link together the trips of Sir. Richard Burton and John Hanning Speke with those of Heinrich Barth",
+      "metrics": {
+        "f1": 0.22222222222222224
+      },
+      "elapsed_time": 2.5785226821899414,
+      "timestamp": "2025-12-18T21:05:10.868916",
+      "sample_idx": 52,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提及他们第一次着陆的具体非洲地点，只有最后才提到了岛上的地方如Kazeh、Benga等。因此，无法从给定的信息中得出他们第一次着陆的非洲具体地点。",
+      "reference": "Zanzibar",
+      "metrics": {
+        "f1": 0.13114754098360654
+      },
+      "elapsed_time": 2.4431779384613037,
+      "timestamp": "2025-12-18T21:05:13.813938",
+      "sample_idx": 53,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有直接提到Mr. Kennedy的职业信息，只有一些关于他的活动和行为描述。例如他参加了旅行团、梦想探险以及与朋友讨论探索计划等。因此无法根据给出的文本确定Mr. Kennedy具体从事何种职业。",
+      "reference": "He was a professional hunter",
+      "metrics": {
+        "f1": 0.08602150537634409
+      },
+      "elapsed_time": 2.419985055923462,
+      "timestamp": "2025-12-18T21:05:16.736946",
+      "sample_idx": 54,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未明确提到旅行开始时的主要焦点或活动，主要介绍了作者Jules Verne的书《在气球上的五周》的一些基本信息和出版社的说明。因此，根据给定的信息，我们无法确定旅行开始时的具体重点或活动。\n\n但是可以推测，从标题“Five Weeks in a Balloon”来看，这次旅行的主要焦点应该是通过气球进行5周的旅行探险。这是一次以飞行为主要手段的非洲探索之旅。",
+      "reference": "They wanted to find the source of the Nile",
+      "metrics": {
+        "f1": 0.1904761904761905
+      },
+      "elapsed_time": 2.741173267364502,
+      "timestamp": "2025-12-18T21:05:19.979807",
+      "sample_idx": 55,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有明确提到这次旅行的起始点。根据故事的情节，三位英国人在一次未知的场合乘坐气球出发了。因此，我们可以推断出他们是从某个地方开始这段旅行的，但是具体的起始地点并未提及。",
+      "reference": "England",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.445570468902588,
+      "timestamp": "2025-12-18T21:05:22.927705",
+      "sample_idx": 56,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未提及他们从一个土著部落营救了谁。因此，无法根据给定的文本内容回答这个问题。",
+      "reference": "A missionary man",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.314887285232544,
+      "timestamp": "2025-12-18T21:05:25.744448",
+      "sample_idx": 57,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文档内容，没有提到Olivia的前主人或者她是逃亡出去的。文档主要描述了Olivia与一个名叫Shah Amurath的人之间的冲突，并且并未提及Olivia试图逃离她的前任主人或她是从那里逃跑的内容。因此无法确定Olivia的名字是哪个前主人的奴隶。",
+      "reference": "Shah Amurath",
+      "metrics": {
+        "f1": 0.16783216783216784
+      },
+      "elapsed_time": 2.7617685794830322,
+      "timestamp": "2025-12-18T21:05:29.009933",
+      "sample_idx": 58,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何关于古代遗迹装饰的信息，因此没有足够的信息来回答这个问题。文本主要讲述了一个名为Shadows in the Moonlight的小说情节，并未涉及古岛上的古代遗迹及其装饰情况。",
+      "reference": "Statues",
+      "metrics": {
+        "f1": 0.11111111111111112
+      },
+      "elapsed_time": 2.414419412612915,
+      "timestamp": "2025-12-18T21:05:31.927288",
+      "sample_idx": 59,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有涉及“Conan”或与海盗相关的内容，因此无法根据给定的文本内容来回答这个问题。文本似乎描述的是另一部作品《月光下的影子》中的情节。在这个故事里，并没有提到任何人救出了Conan。",
+      "reference": "Olivia",
+      "metrics": {
+        "f1": 0.05263157894736842
+      },
+      "elapsed_time": 2.4903404712677,
+      "timestamp": "2025-12-18T21:05:34.920863",
+      "sample_idx": 60,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Olivia正在逃离哪个城市，因此无法确定她正从哪个城市逃走。",
+      "reference": "Akif",
+      "metrics": {
+        "f1": 0.1111111111111111
+      },
+      "elapsed_time": 2.2751126289367676,
+      "timestamp": "2025-12-18T21:05:37.698805",
+      "sample_idx": 61,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Conan和Olivia逃离荒岛的情节，因此无法根据给定的文本内容回答这个问题。文本主要讲述了一段发生在荒岛上发生的故事，叙述了一个名叫Olivia的女孩与一个名叫Shah Amurath的男子之间的冲突。文本并未提及任何名为“Conan”的人物。",
+      "reference": "Pirate ship",
+      "metrics": {
+        "f1": 0.15384615384615385
+      },
+      "elapsed_time": 2.5207879543304443,
+      "timestamp": "2025-12-18T21:05:40.722352",
+      "sample_idx": 62,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何关于海盗船长的内容或事件，因此无法回答关于“海盗船长”在荒岛停泊时发生的事情。文本主要讲述了《月光下的阴影》这篇恐怖故事的情节。所以根据给出的文本信息，这个问题是基于虚构内容提出的，并且与给定文本不符。",
+      "reference": "Conan slays him.",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.529459238052368,
+      "timestamp": "2025-12-18T21:05:43.754277",
+      "sample_idx": 63,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到康纳（Conan）在离开岛屿时对奥利维娅（Olivia）说的话，因此无法根据给定的文本内容回答这个问题。",
+      "reference": "Queen of the Blue Sea",
+      "metrics": {
+        "f1": 0.125
+      },
+      "elapsed_time": 2.352324962615967,
+      "timestamp": "2025-12-18T21:05:46.608926",
+      "sample_idx": 64,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提到任何其他人在Conan和Olivia离开荒岛的船上，因此无法根据给定文本得出答案。文本主要讲述的是Olivia在荒岛上遭遇的一场劫难，并未提及船上有其他人。",
+      "reference": "pirates from the ship",
+      "metrics": {
+        "f1": 0.08823529411764706
+      },
+      "elapsed_time": 2.415912389755249,
+      "timestamp": "2025-12-18T21:05:49.527255",
+      "sample_idx": 65,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未提到Conan的身份，也没有提及Olivia在哪里被发现的情况。因此，根据给定的文本内容，无法回答Conan在哪里发现了Olivia的问题。需要更多的上下文信息来解答这个问题。",
+      "reference": "Marshes",
+      "metrics": {
+        "f1": 0.03125
+      },
+      "elapsed_time": 2.4069621562957764,
+      "timestamp": "2025-12-18T21:05:52.436925",
+      "sample_idx": 66,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何关于海盗给某个岛屿起名或描述的情节，因此没有足够的信息来回答这个问题。",
+      "reference": "\"Devil Island\"",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.2663376331329346,
+      "timestamp": "2025-12-18T21:05:55.206128",
+      "sample_idx": 67,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "The title of the story is \"Shadows in the Moonlight\".",
+      "reference": "Shadows in the Moonlight",
+      "metrics": {
+        "f1": 0.6233766233766235
+      },
+      "elapsed_time": 2.2188944816589355,
+      "timestamp": "2025-12-18T21:05:57.928483",
+      "sample_idx": 68,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文本，没有提到有任何角色逃离了城市阿基夫(Akif)。文本描述了一个发生在丛林中的事件，并不涉及离开某个城市的行动。因此无法从给定的文本中得出关于“谁逃出了阿基夫城”的信息。",
+      "reference": "Olivia",
+      "metrics": {
+        "f1": 0.05633802816901409
+      },
+      "elapsed_time": 2.470219373703003,
+      "timestamp": "2025-12-18T21:06:00.901400",
+      "sample_idx": 69,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "The newcomer, described as being \"bloodthirsty\" and having a voice that rose to a \"maddened scream,\" was nearly mad because he had just been confronted by Shah Amurath in what seemed like an impossible situation - facing the armored leader of Akif. This included him dreaming about this encounter for years, not knowing if it would ever happen, and now facing death at the hands of Shah Amurath. His extreme anger and thirst for revenge pushed him to nearly madness.",
+      "reference": "He hidden in the reeds for so long",
+      "metrics": {
+        "f1": 0.6190476190476191
+      },
+      "elapsed_time": 2.7630538940429688,
+      "timestamp": "2025-12-18T21:06:04.168597",
+      "sample_idx": 70,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到他们是否在某个地方过夜，以及第一晚停留的地方。根据给出的文本内容，主要描述了一个夜间发生的事件，包括一个女孩和一位名叫Shah Amurath的人之间的冲突。因此，无法从给定的信息中得出他们在哪里度过了第一个夜晚。",
+      "reference": "In ancient ruins with lifelike statues",
+      "metrics": {
+        "f1": 0.15217391304347827
+      },
+      "elapsed_time": 2.4884586334228516,
+      "timestamp": "2025-12-18T21:06:07.160145",
+      "sample_idx": 71,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文档内容，没有提到名为“Conan”的人物或情节，因此无法从文档中获取关于“Conan更关心什么”的信息。文档描述的是一个名为Olivia的女性在丛林遭遇的一段故事。所以这个问题与给定文档无关或者不存在于文档内容中。",
+      "reference": "Something lurking in the jungle",
+      "metrics": {
+        "f1": 0.09195402298850575
+      },
+      "elapsed_time": 2.500019073486328,
+      "timestamp": "2025-12-18T21:06:10.162870",
+      "sample_idx": 72,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提到任何与港口或岛屿有关的信息，因此无法回答\"What comes into port on the island?\"这个问题。",
+      "reference": "A pirate ship",
+      "metrics": {
+        "f1": 0.3103448275862069
+      },
+      "elapsed_time": 2.2670552730560303,
+      "timestamp": "2025-12-18T21:06:12.932745",
+      "sample_idx": 73,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "The text describes a mysterious dark figure who appears during the battle. The exact identity of this dark figure is not explicitly stated in the text, but it is clear that this person is trying to harm or capture Olivia (Olivia de Lestin). From her description and reaction, she believes him to be Shah Amurath, a powerful horseman. However, when she confronts him, he reveals himself as an apparition, which seems to be a barbarous warrior from the Hyrkanian region who has come seeking revenge on Shah Amurath.\n\nSo in summary, the dark figure is not necessarily a villain or antagonist per se - it could be a victim of circumstance (Shah Amurath) with his own plans and motivations that go beyond Olivia's control. It seems to be used more as an obstacle or threat for her character development purposes rather than having a clearly defined role in the story.",
+      "reference": "A giant man ape",
+      "metrics": {
+        "f1": 0.45000000000000007
+      },
+      "elapsed_time": 3.396820545196533,
+      "timestamp": "2025-12-18T21:06:16.832255",
+      "sample_idx": 74,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提供关于“遗址”(ruins) 的任何信息或描述，因此无法根据提供的文本内容来回答\"What was happening back at the ruins?\"这个问题。文本主要讲述了《月光下的阴影》（Shadows in the Moonlight）一文中的一个故事场景，并未提到任何与“遗址”相关的情节或背景。",
+      "reference": "a horrific slaughter",
+      "metrics": {
+        "f1": 0.25490196078431376
+      },
+      "elapsed_time": 2.5990819931030273,
+      "timestamp": "2025-12-18T21:06:19.934875",
+      "sample_idx": 75,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何关于岛屿的信息或名称，因此没有足够的信息来回答\"What was the island called?\"这个问题。根据给出的文本内容，它只涉及到了一个名为Shah Amurath的男人和一个名为Olivia的女孩，他们之间发生了一次冲突。文本主要描述了战斗的情景以及一些角色之间的对话。\n\n问题核心可能是关于岛屿或某个特定地点的信息缺失导致的问题理解不准确。但是基于提供的信息,无法回答有关岛屿名称的问题。",
+      "reference": "Devil Island",
+      "metrics": {
+        "f1": 0.22222222222222224
+      },
+      "elapsed_time": 2.749019145965576,
+      "timestamp": "2025-12-18T21:06:23.196643",
+      "sample_idx": 76,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到“Queen of the Blue Sea”的相关信息，因此没有答案可以提供。该问题是基于一个不在给定文本中的情节。",
+      "reference": "Olivia",
+      "metrics": {
+        "f1": 0.10714285714285714
+      },
+      "elapsed_time": 2.320420265197754,
+      "timestamp": "2025-12-18T21:06:26.020087",
+      "sample_idx": 77,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "At the start of the story, Olivia appears to be fleeing or trying to escape Shah Amurath. The text describes a scene where she is hiding in a clearing surrounded by tall reeds and possibly under attack from her pursuer, who was chasing her on horseback. Therefore, we can infer that Olivia is escaping from Shah Amurath's pursuit.",
+      "reference": "Life in the city of Akif, under her former master, Shah Amurath.",
+      "metrics": {
+        "f1": 0.851063829787234
+      },
+      "elapsed_time": 2.606646776199341,
+      "timestamp": "2025-12-18T21:06:29.129617",
+      "sample_idx": 78,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "The mad man who defeats Olivia's pursuer turns out to be a Hyrkanian. The text describes him as \"a savage or madman\" and refers to him as a \"Hyrkanian dog\". He later identifies himself as a \"Kozak\", suggesting he is part of the Kozaki tribe that Shah Amurath conquered.",
+      "reference": "Conan the Cimmerian.",
+      "metrics": {
+        "f1": 0.5714285714285715
+      },
+      "elapsed_time": 2.5770537853240967,
+      "timestamp": "2025-12-18T21:06:32.209692",
+      "sample_idx": 79,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何名为Conan和Olivia的角色，因此没有足够的信息来确定他们寻求避难的地方以休息。根据提供的文档内容来看，这段文字描述的是一个独立的故事《月光下的阴影》，讲述的是一名名叫奥利维亚的女孩和一名叫做Shah Amurath的人物之间的冲突。文中并没有提及两人前往任何地方避难或休息的信息。",
+      "reference": "In ancient ruins on a deserted island.",
+      "metrics": {
+        "f1": 0.1981981981981982
+      },
+      "elapsed_time": 2.628246545791626,
+      "timestamp": "2025-12-18T21:06:35.341815",
+      "sample_idx": 80,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Conan和Olivia在古代废墟里过夜的情节，因此没有足够的信息来回答这个问题。根据提供的文本，我们可以了解到一个名叫奥利维亚的女性被一名名叫Shah Amurath的男子追赶，并与之发生了一场战斗。而Conan并不是这个故事中的角色。所以关于他们是否在古废墟中过夜，以及Olivia是否对此感到担心，都没有相关信息可以回答这个问题。",
+      "reference": "That the statues were once men, and they will come to life and attack them. ",
+      "metrics": {
+        "f1": 0.2184873949579832
+      },
+      "elapsed_time": 2.7731399536132812,
+      "timestamp": "2025-12-18T21:06:38.618131",
+      "sample_idx": 81,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有描述任何名为“Conan”的角色，也没有提到他在被海盗俘虏之前做了什么。因此，无法根据提供的文本内容来回答这个问题。文本主要讲述了《月光下的阴影》一文的内容，并没有涉及Conan或他与海盗之间的故事。",
+      "reference": "Kill the pirate captain.",
+      "metrics": {
+        "f1": 0.06976744186046512
+      },
+      "elapsed_time": 2.4650251865386963,
+      "timestamp": "2025-12-18T21:06:41.586928",
+      "sample_idx": 82,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文档内容，文档并没有提到任何关于海盗如何处理康斯坦（Conan）的内容。文档主要讲述了名为Shah Amurath的人物与一个名叫Olivia的女子之间的冲突情节。因此，无法从给定的文档中回答关于海盗如何处置康斯坦的问题。",
+      "reference": "They talk about what to do with him, drink too much, and fall asleep.",
+      "metrics": {
+        "f1": 0.25999999999999995
+      },
+      "elapsed_time": 2.4995768070220947,
+      "timestamp": "2025-12-18T21:06:44.590248",
+      "sample_idx": 83,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到\"谁救了康诺斯（Conan）于海盗之手\"的内容，因此无法根据给定的文本内容来作答该问题。文本主要描述了一个关于《月光下的影子》的故事，并没有涉及康诺斯或救他脱离海盗的情节。",
+      "reference": "Olivia.",
+      "metrics": {
+        "f1": 0.05333333333333333
+      },
+      "elapsed_time": 2.5090858936309814,
+      "timestamp": "2025-12-18T21:06:47.602772",
+      "sample_idx": 84,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文本内容，没有提到有其他人物伴随Olivia穿越丛林再回到废墟的情节。文本主要讲述了Olivia与名叫Shah Amurath的男子之间的冲突，并最终被Shah Amurath抓住。因此，无法从给定的文本中得知有其他人伴随Olivia通过丛林返回废墟的情况。",
+      "reference": "A giant man-ape.",
+      "metrics": {
+        "f1": 0.11494252873563217
+      },
+      "elapsed_time": 2.534801721572876,
+      "timestamp": "2025-12-18T21:06:50.643421",
+      "sample_idx": 85,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有描述Olivia和Conan在击败了人猿之后去了哪里的情节。根据给定的文本，主要讲述了Olivia与Shah Amurath之间以及他与人猿之间的冲突。因此，无法从所提供的信息中得出他们去向何处的答案。",
+      "reference": "To take over the pirate ship.",
+      "metrics": {
+        "f1": 0.21428571428571425
+      },
+      "elapsed_time": 2.4961776733398438,
+      "timestamp": "2025-12-18T21:06:53.643028",
+      "sample_idx": 86,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本内容主要描述了一段发生在沙漠中的冒险故事，并没有提到名为\"Conan\"的角色，也没有提及海盗的情节。因此，无法根据提供的文本内容来回答关于“Conan被海盗们在故事结尾处 confrontation 的情况”。\n\n如果你能提供该部分的详细信息或修正问题，我将很乐意帮助解答。",
+      "reference": "The pirates make him their captain.",
+      "metrics": {
+        "f1": 0.12962962962962962
+      },
+      "elapsed_time": 2.5737082958221436,
+      "timestamp": "2025-12-18T21:06:56.720278",
+      "sample_idx": 87,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文本内容，无法确定Olivia是否被关押或在哪里被关押。文本主要描述了Olivia和一个名叫Shah Amurath的马车夫之间的遭遇，并没有提及Olivia被囚禁的情况。",
+      "reference": "Akif",
+      "metrics": {
+        "f1": 0.061538461538461535
+      },
+      "elapsed_time": 2.4264492988586426,
+      "timestamp": "2025-12-18T21:06:59.650223",
+      "sample_idx": 88,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未提及任何名为\"Olivia\"的角色被逼迫在湿地中的河流或湖泊里。根据提供的信息，Olivia被困在一个低洼的海岸后面，那里有蓝色的海水拍打着低地边缘。因此，问题中的“a marsh near”和“a body of water”并没有明确的信息指向特定的水域，文本中并未提及任何与Olivia有关的河流或湖泊。基于提供的信息，我们无法确定Olivia是在一个湿地附近被包围的。",
+      "reference": "Vilayet Sea",
+      "metrics": {
+        "f1": 0.16822429906542058
+      },
+      "elapsed_time": 2.7740631103515625,
+      "timestamp": "2025-12-18T21:07:02.928661",
+      "sample_idx": 89,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中没有提到任何名为Olivia的新来者，因此无法确定Olivia遇到的陌生人的名字。根据描述，Olivia遇到了一名名叫Shah Amurath的人物，而这个陌生人的名字是Olivia听到他用一种不明语言口中的“Hyrkanian dog”时认出的。所以，最准确的答案应为“Shah Amurath”。",
+      "reference": "Conan",
+      "metrics": {
+        "f1": 0.07317073170731708
+      },
+      "elapsed_time": 2.6333518028259277,
+      "timestamp": "2025-12-18T21:07:06.067813",
+      "sample_idx": 90,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何关于Olivia和Conan（即Shah Amurath）在逃离Shah Amurath后躲藏到哪里的内容。因此，根据给出的文本信息无法回答这个问题。",
+      "reference": "Boat",
+      "metrics": {
+        "f1": 0.09523809523809525
+      },
+      "elapsed_time": 2.4112703800201416,
+      "timestamp": "2025-12-18T21:07:08.982232",
+      "sample_idx": 91,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何关于Olivia看待月光下的雕像的内容，因此没有足够的信息来回答这个问题。文本主要描述了一段战斗情节，并没有涉及与月亮或雕像相关的情节。",
+      "reference": "That they will come to life",
+      "metrics": {
+        "f1": 0.1111111111111111
+      },
+      "elapsed_time": 2.400054693222046,
+      "timestamp": "2025-12-18T21:07:11.886557",
+      "sample_idx": 92,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有描述任何东西出现在一个荒岛上的情节，因此没有足够的信息来回答这个问题。文本描述的是一个关于战斗和暴力的故事，讲述的是两个角色之间的冲突。所以根据提供的文本内容，无法得出答案。",
+      "reference": "Pirate ship",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.4195876121520996,
+      "timestamp": "2025-12-18T21:07:14.809707",
+      "sample_idx": 93,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到Olivia去到某个遗址时需要逃走或躲避什么，因此无法根据给定的文本内容回答“Olivia去到某个遗址时要逃走或躲避什么”。文本主要描述了Olivia与一名名叫Shah Amurath的人物之间的冲突。",
+      "reference": "Dark Figure",
+      "metrics": {
+        "f1": 0.13157894736842105
+      },
+      "elapsed_time": 2.498917579650879,
+      "timestamp": "2025-12-18T21:07:17.812234",
+      "sample_idx": 94,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并没有提到任何关于海盗、岛屿或相关情节的信息。因此，无法根据提供的文本内容来回答“根据海盗的说法，岛的名字是什么？”这个问题。\n\n文本主要描述了一段冒险故事中的战斗场景，并没有涉及与海盗及其名字的关联。若需要解答此问题，请提供包含相关信息的新文本。",
+      "reference": "Devil Island",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.543621301651001,
+      "timestamp": "2025-12-18T21:07:20.859892",
+      "sample_idx": 95,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未提到任何关于“Conan”成为“captain”的内容，因此没有足够的信息来回答这个问题。根据提供的文本内容，该故事是《月光下的阴影》(Shadows in the Moonlight)，作者为Robert E. Howard。故而无法从给定的文本中得出谁让康斯坦丁（Conan）当上队长的答案。",
+      "reference": "Pirates",
+      "metrics": {
+        "f1": 0.14
+      },
+      "elapsed_time": 2.642397165298462,
+      "timestamp": "2025-12-18T21:07:24.006596",
+      "sample_idx": 96,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "根据提供的文档内容，没有提到名为\"Conan\"的男子与Olivia交谈或做出任何许诺。文档描述了Shah Amurath如何对待Olivia，包括要求她屈从以及威胁要将她带回Akif，并且在战斗中使用武器攻击她。文档并未提及任何名叫Conan的角色或其对Olivia所下的命令或承诺。因此，无法根据给定的文本内容回答这个问题。",
+      "reference": "Make her \"Queen of the Blue Sea\"",
+      "metrics": {
+        "f1": 0.24137931034482757
+      },
+      "elapsed_time": 2.7040932178497314,
+      "timestamp": "2025-12-18T21:07:27.214236",
+      "sample_idx": 97,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "文本中并未提及Olivia曾从哪个城市逃离过。根据提供的信息，我们只知道Olivia是一个被Shah Amurath追赶的女孩，并且她似乎来自Hyrkanian地区（由提到的“Hyrkanian dog”可以推测）。但并没有明确指出她是如何离开她的家乡或逃亡的城市的。",
+      "reference": "Olivia has fled from Akif.",
+      "metrics": {
+        "f1": 0.24000000000000002
+      },
+      "elapsed_time": 2.5346908569335938,
+      "timestamp": "2025-12-18T21:07:30.252842",
+      "sample_idx": 98,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.05,
+      "context_length": 6552,
+      "prediction": "Shah Amurath 是在追逐和追捕奥利维娅的。他乘坐一匹马进入了一个被芦苇环绕的小空地，并且在那里发现了奥利维娅，随后便对她展开了攻击。",
+      "reference": "Shah Amurath is chasing Olivia.",
+      "metrics": {
+        "f1": 0.5
+      },
+      "elapsed_time": 2.423372983932495,
+      "timestamp": "2025-12-18T21:07:33.180612",
+      "sample_idx": 99,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Miss Delmar refers to Honourable Captain Delmar, an elderly spinster who lived at Madeline Hall. She was sister of the late Lord de Versely and aunt to the present earl. Miss Arabella Mason's aunt, as well.",
+      "reference": "the elderly spinster aunt of the Earl de Verseley and Captain Delmar",
+      "metrics": {
+        "f1": 0.8837209302325582
+      },
+      "elapsed_time": 2.8837509155273438,
+      "timestamp": "2025-12-18T21:07:36.570019",
+      "sample_idx": 0,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本，Arabella Mason 婚姻的对象是 Ben Keene，他是一位海军士兵。尽管她与 Captain Delmar 有亲戚关系，并且 Aralba Mason 是 Delmar 家族的女管家的女儿，但最终还是选择了嫁给船员 Ben Keene。",
+      "reference": "Ben Keene, Delmar's valet",
+      "metrics": {
+        "f1": 0.31578947368421056
+      },
+      "elapsed_time": 2.4962542057037354,
+      "timestamp": "2025-12-18T21:07:39.569963",
+      "sample_idx": 1,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Percival Keene's name is derived from two sources. Captain Frederick Marryat, the author, uses it as a pen name for this book. Furthermore, Percival is named after Captain Delmar’s aunt, Miss Delmar, whose maiden name was Percival. Finally, Keene comes from Benjamin Keene, the main character Ben's surname, who is married to Arabella Mason. Thus, Percival Keene combines elements of his author, a family name reference, and his main character's last name.",
+      "reference": "Percival is Captain Delmar's first name, and Keene is Ben's last name",
+      "metrics": {
+        "f1": 0.8260869565217391
+      },
+      "elapsed_time": 2.835883855819702,
+      "timestamp": "2025-12-18T21:07:42.920327",
+      "sample_idx": 2,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文中并未提及有人偷窃Percival的午餐，因此没有提到某位\"bully\"(混混)来偷Percival的饭点。根据提供的文档内容，主要讲述了Madeline Hall及其原住民的一些情况，并没有涉及到关于Percival被偷餐的内容。所以无法基于给定文本回答该问题。",
+      "reference": "his teacher, Mr. O'Gallagher",
+      "metrics": {
+        "f1": 0.18749999999999997
+      },
+      "elapsed_time": 2.60028076171875,
+      "timestamp": "2025-12-18T21:07:46.024356",
+      "sample_idx": 3,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文档内容，没有关于Percival如何报复O'Gallagher因为他拿走了男孩的所有烟花的内容。文档主要讲述了Percival Keene的故事和他的生活背景，并提到了Captain Marryat的作品《佩里瓦尔·凯恩》以及相关人物和情节描述。因此对于“Percival是如何报复O'Gallagher”的问题，没有足够的信息来回答。",
+      "reference": "He sets them on fire with the teacher sitting on them",
+      "metrics": {
+        "f1": 0.2201834862385321
+      },
+      "elapsed_time": 2.7110893726348877,
+      "timestamp": "2025-12-18T21:07:49.239499",
+      "sample_idx": 4,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文档内容，文档并没有提到Percival Keene说服海盗饶恕某人的情节或信息。文档主要讲述了《佩里卡夫·凯恩》一书的情节背景和作者简介，并没有涉及Percival及其是否说服海盗饶恕某人的情况。因此，无法从给定文本中找到相关信息来回答这个问题。",
+      "reference": "a rich Dutch merchant and his daughter Minnie",
+      "metrics": {
+        "f1": 0.1386138613861386
+      },
+      "elapsed_time": 2.6613292694091797,
+      "timestamp": "2025-12-18T21:07:52.403982",
+      "sample_idx": 5,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到Percival如何救Captain Delmar的生命。根据提供的文档内容，主要是讲述了Madeline Hall的背景故事、Captain Delmar与其侄女Bella Mason的关系，以及他们的朋友Benjamin Keene的故事。并没有提及任何关于Percival救人的情节。因此，无法从给定文本中回答这个问题。",
+      "reference": "When the captain is ill, Percival takes his place in a duel with a French officer",
+      "metrics": {
+        "f1": 0.3137254901960785
+      },
+      "elapsed_time": 2.5659735202789307,
+      "timestamp": "2025-12-18T21:07:55.474431",
+      "sample_idx": 6,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到Percival的母亲承认了任何有关的惊人消息。根据给出的文本，主要讲述了Madeline Hall内几个角色的生活情况和Captain Delmar与Miss Bella Mason之间的关系。其中提到了Captain Delmar及其侄女Delmar夫人对Jane和他的未婚妻Benjamin Keene的婚姻的不同反应，但是并没有提到Percival的母亲承认了任何惊人消息。",
+      "reference": "Captain Delmar is Percival's father",
+      "metrics": {
+        "f1": 0.3061224489795918
+      },
+      "elapsed_time": 2.6916213035583496,
+      "timestamp": "2025-12-18T21:07:58.669677",
+      "sample_idx": 7,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到Percival被法国人俘虏的相关情节，因此无法根据给定的文本内容来回答这个问题。文本主要讲述了《佩里卡维·基内》这本书的一些背景信息以及书中角色的生活情况，并没有涉及Percival被俘的相关事件。",
+      "reference": "he is sentenced to execution",
+      "metrics": {
+        "f1": 0.06896551724137932
+      },
+      "elapsed_time": 2.532727003097534,
+      "timestamp": "2025-12-18T21:08:01.705658",
+      "sample_idx": 8,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "在故事的结尾，Percival Keene得知他的男仆Benjamin Keene与他堂姐Bella Mason秘密结婚的消息。这令Captain Delmar非常生气，他认为这样做是不对的，并打算惩罚Benjamin Keene。而Delmar夫人则表示愿意让Benjamin Keene离开他们的房子。",
+      "reference": "He has been granted the right to use his father's name, Delmar",
+      "metrics": {
+        "f1": 0.2888888888888889
+      },
+      "elapsed_time": 2.5842645168304443,
+      "timestamp": "2025-12-18T21:08:04.793589",
+      "sample_idx": 9,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Madeline Hall是de Versely家族的旧 mansion-house，被称为Madeline Hall，已经存在了几百年。",
+      "reference": "Madeline Hall",
+      "metrics": {
+        "f1": 0.3170731707317073
+      },
+      "elapsed_time": 2.2611281871795654,
+      "timestamp": "2025-12-18T21:08:07.560870",
+      "sample_idx": 10,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Miss Arabella Mason and Benjamin Keene live at Madeline Hall. Miss Arabella Mason is the aunt's humble companion who also likes the captain, attention, and sailors. Benjamin Keene is her husband and the Honourable Captain Delmar's valet.",
+      "reference": "Miss Delmar",
+      "metrics": {
+        "f1": 0.5454545454545454
+      },
+      "elapsed_time": 2.4740490913391113,
+      "timestamp": "2025-12-18T21:08:10.538419",
+      "sample_idx": 11,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本，Captain Delmar建议Benjamin Keene秘密与Bella Mason结婚。",
+      "reference": "Arabella",
+      "metrics": {
+        "f1": 0.2857142857142857
+      },
+      "elapsed_time": 2.219226598739624,
+      "timestamp": "2025-12-18T21:08:13.261232",
+      "sample_idx": 12,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的信息，文本中并没有提到Ben和Arabella的儿子这一角色。因此无法确定他们的儿子是谁。文本主要讲述了Benjamin Keene（即Ben）以及Arabella Mason之间的关系，并没有提及他们是否有孩子。",
+      "reference": "Percival Keene",
+      "metrics": {
+        "f1": 0.2191780821917808
+      },
+      "elapsed_time": 2.4331862926483154,
+      "timestamp": "2025-12-18T21:08:16.198461",
+      "sample_idx": 13,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到Percival做了一件什么事情来导致他离开家去上学。因此，没有足够的信息来直接回答这个问题。从提供的文档来看，我们主要了解的是Madeline Hall的家庭背景、Marryat作品《Percival Keene》的出版信息以及Madeline Hall中的人物关系，并没有关于Percival对他的祖母做什么而离家去学校的描述。",
+      "reference": "He bit his grandmother.",
+      "metrics": {
+        "f1": 0.18518518518518517
+      },
+      "elapsed_time": 2.6782727241516113,
+      "timestamp": "2025-12-18T21:08:19.380776",
+      "sample_idx": 14,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到Percival Keene说服海盗船长要饶过谁的问题。根据提供的信息，这篇小说是关于一个名叫Percival Keene的故事，讲述他的冒险经历以及他与周围人物的关系，但并未涉及任何饶过特定目标的场景或情节。因此没有足够的信息来回答这个问题。",
+      "reference": "A Dutch merchant and his daughter",
+      "metrics": {
+        "f1": 0.1386138613861386
+      },
+      "elapsed_time": 2.659456491470337,
+      "timestamp": "2025-12-18T21:08:22.544133",
+      "sample_idx": 15,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未直接说明谁会成为Lord de Versely。文中提到Lord de Versely有一个去世的弟弟，但没有明确指出他的女儿或是其他家族成员会接任这个职位。所以，根据提供的信息，无法确定谁会在他兄弟死后成为Lord de Versely。",
+      "reference": "Colonial Delmar",
+      "metrics": {
+        "f1": 0.15789473684210525
+      },
+      "elapsed_time": 2.5904128551483154,
+      "timestamp": "2025-12-18T21:08:25.638294",
+      "sample_idx": 16,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文档内容，没有提到Percival被提升为任何职位或晋升的事情，文档主要讲述了佩里瓦尔·肯恩的故事及其相关人物背景，并未提及Percival因与法国战舰的行动而获得晋升的情况。所以关于这个问题的回答需要基于文本内容进行合理推测和理解。根据文中的描述，这可能是指佩里瓦尔·肯恩在与法军战船的战斗中表现突出，但文档并未直接说明他因此获得了晋升。",
+      "reference": "Capitan",
+      "metrics": {
+        "f1": 0.07017543859649122
+      },
+      "elapsed_time": 2.8850066661834717,
+      "timestamp": "2025-12-18T21:08:29.027506",
+      "sample_idx": 17,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本内容，Percival Keene并没有明确提到他是否提出过结婚的提议。文中主要描述了Benjamin Keene与Arabella Mason之间的恋爱关系以及他们秘密结婚的事实，但并未提及Percival Keene是否有向Benjamin Keene或Arabella Mason中的任何一人求婚的行为。所以根据现有信息无法确定Percival Keene是否曾向任何人提出过婚姻提议。",
+      "reference": "Minni",
+      "metrics": {
+        "f1": 0.07228915662650602
+      },
+      "elapsed_time": 2.7404086589813232,
+      "timestamp": "2025-12-18T21:08:32.272426",
+      "sample_idx": 18,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到Percival Keene这个人，所以没有足够的信息来确定他在故事的结尾被授予了什么。文本主要讲述了Madeline Hall内的人物关系和Captain Delmar与Miss Bella Mason之间的关系发展，以及Benjamin Keene作为Captain Delmar的仆人的事迹等。因此，关于Percival Keene在故事结尾是否获得任何东西的问题无法从给定的文本中得出答案。",
+      "reference": "The arms and name of Delmar",
+      "metrics": {
+        "f1": 0.22429906542056074
+      },
+      "elapsed_time": 2.7353856563568115,
+      "timestamp": "2025-12-18T21:08:35.511876",
+      "sample_idx": 19,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Arabella Manson was a very pretty young woman of eighteen years old who lived at Madeline Hall. She was the eldest daughter of the steward of the old Lord de Versely, and sister to Honourable Miss Delmar. Arabella Mason liked attention, liked sailors, and had a special liking for the Honourable Captain Delmar, but she also had feelings towards Benjamin Keene, the captain's valet.",
+      "reference": "Miss Delma house guest",
+      "metrics": {
+        "f1": 0.65
+      },
+      "elapsed_time": 2.703791618347168,
+      "timestamp": "2025-12-18T21:08:38.723629",
+      "sample_idx": 20,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Benjamin Keene, commonly known as Ben, is introduced as the valet (男仆) for Captain Delmar. He is described as being very clean, respectful, and admired by all young women due to his handsome appearance. However, despite his physical attractiveness and good looks, he lacks intelligence and has not been educated properly.",
+      "reference": "His Captain Delmar valet",
+      "metrics": {
+        "f1": 0.6666666666666666
+      },
+      "elapsed_time": 2.6586968898773193,
+      "timestamp": "2025-12-18T21:08:41.886387",
+      "sample_idx": 21,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Benjamin Keene married Miss Arabella Mason in secret.",
+      "reference": "Arabella Manson",
+      "metrics": {
+        "f1": 0.7407407407407407
+      },
+      "elapsed_time": 2.2051732540130615,
+      "timestamp": "2025-12-18T21:08:44.595815",
+      "sample_idx": 22,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有直接提到Percival Keene的身份或背景信息，因此没有足够的信息来确定他具体是谁。根据提供的段落内容，我们只了解到了关于Madeline Hall和一些主要人物的描述，并未提及名为Percival Keene的人物。文本主要介绍的是Captain Frederick Marryat的小说《Percival Keene》的一些作者背景以及与之相关的人物。所以，无法从给定文本中得知Percival Kneene的身份。",
+      "reference": "Arabella and Been son",
+      "metrics": {
+        "f1": 0.1333333333333333
+      },
+      "elapsed_time": 2.950432538986206,
+      "timestamp": "2025-12-18T21:08:48.050502",
+      "sample_idx": 23,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中没有提到Percival被送往的学校信息，因此无法根据给定文本内容回答这个问题。",
+      "reference": "Mr O'Gallagher school",
+      "metrics": {
+        "f1": 0.18867924528301888
+      },
+      "elapsed_time": 2.2825698852539062,
+      "timestamp": "2025-12-18T21:08:50.837110",
+      "sample_idx": 24,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提及Percival的生物学父亲是谁，只描述了Percival Keene的家庭背景和与几位主要人物的关系。因此，根据给定的文本内容无法得知Percival的生物学父亲是谁。",
+      "reference": "Captain  Delmar",
+      "metrics": {
+        "f1": 0.2571428571428572
+      },
+      "elapsed_time": 2.4785778522491455,
+      "timestamp": "2025-12-18T21:08:53.819919",
+      "sample_idx": 25,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到H. M. Calliope如何对待Percival Keene或将其作为囚犯的相关信息。因此，没有足够的依据来回答“为什么H. M. Calliope将Percival Keene当作囚犯”。根据提供的文档内容，这并不是一个合理的问题，因为相关情节并未提及。",
+      "reference": "Because Percival skin was dyed tan",
+      "metrics": {
+        "f1": 0.2417582417582418
+      },
+      "elapsed_time": 2.6533782482147217,
+      "timestamp": "2025-12-18T21:08:56.977717",
+      "sample_idx": 26,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未提到Percival Keene是否与某人重逢，也没有提及任何关于Percival Keene reunion的内容。因此，根据给出的文本内容，无法回答谁被Percival Keene团聚了。",
+      "reference": "Minnie",
+      "metrics": {
+        "f1": 0.10169491525423728
+      },
+      "elapsed_time": 2.504409074783325,
+      "timestamp": "2025-12-18T21:08:59.986667",
+      "sample_idx": 27,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到名为Minnie的人物，因此没有足够的信息来确定“Who was Minnie?”这个问题的答案。",
+      "reference": "A Heiress",
+      "metrics": {
+        "f1": 0.24
+      },
+      "elapsed_time": 2.3175787925720215,
+      "timestamp": "2025-12-18T21:09:02.808307",
+      "sample_idx": 28,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本内容，探索者们最终返回的国家是英国。这可以从结尾部分的内容推断出来：“The Return to London。”这句话表明了他们回到伦敦，而伦敦位于英国。因此可以推测出探险队最后返回的国家是中国（London通常指的是英格兰和整个英国）。",
+      "reference": "England",
+      "metrics": {
+        "f1": 0.0963855421686747
+      },
+      "elapsed_time": 3.2897093296051025,
+      "timestamp": "2025-12-18T21:09:06.603056",
+      "sample_idx": 29,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未提及任何物种的灭绝情况，也没有提到只有唯一一只某种动物被杀的情况。因此，没有足够的信息来回答这个问题。",
+      "reference": "A Bluebuck antelope",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.3604516983032227,
+      "timestamp": "2025-12-18T21:09:09.471034",
+      "sample_idx": 30,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未提及任何鸟类攻击热气球的情节，因此无法根据给定的文本信息回答“什么类型的鸟会攻击热气球？”这个问题。",
+      "reference": "Condors",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.3861875534057617,
+      "timestamp": "2025-12-18T21:09:12.361166",
+      "sample_idx": 31,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本内容，没有明确提到探险者在找不到水时具体位于何处或他们的行进路线。因此，无法从给定的文本中确定探险者在找不到水时所处的确切位置。文本主要描述了《热气球五周》这本书的大致结构和一些章节的内容摘要，但并未详细叙述具体情节中的地理信息。",
+      "reference": "The Sahara desert",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.7374958992004395,
+      "timestamp": "2025-12-18T21:09:15.603798",
+      "sample_idx": 32,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到具体的部落打算如何对待传教士，只是提到了探险者们正在营救传教士的情节。因此，无法根据给定的文本信息来确定具体是哪个部落将采取什么行动对待传教士。",
+      "reference": "Sacrifice him",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.5459680557250977,
+      "timestamp": "2025-12-18T21:09:18.653694",
+      "sample_idx": 33,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未提及任何关于探索水源的信息，因此无法根据给定的文本内容回答“The initial exploration is to find the source of what?”这个问题。",
+      "reference": "The Nile river",
+      "metrics": {
+        "f1": 0.24242424242424243
+      },
+      "elapsed_time": 2.418328285217285,
+      "timestamp": "2025-12-18T21:09:21.576509",
+      "sample_idx": 34,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有描述一个被错误地认为是沙漠但实际上是一个稀树草原的地区。因此，无法根据给定文本信息来作答。",
+      "reference": "The interior of Africa near modern day Central African Republic.",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.37162446975708,
+      "timestamp": "2025-12-18T21:09:24.452733",
+      "sample_idx": 35,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本内容，没有提到Dr. Ferguson的同伴或旅行者的名字。文本主要讲述了Dr. Samuel Ferguson在演讲中的表现以及听众对他的评价，并没有提及他与谁一起探险或旅行的信息。",
+      "reference": "Joe and Richard \"Dick\" Kennedy",
+      "metrics": {
+        "f1": 0.1818181818181818
+      },
+      "elapsed_time": 2.488586664199829,
+      "timestamp": "2025-12-18T21:09:27.446226",
+      "sample_idx": 36,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中没有提到旅行的出发地点位于东海岸，因此无法根据给定文本内容回答这个问题。",
+      "reference": "Zanzibar",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.2783548831939697,
+      "timestamp": "2025-12-18T21:09:30.229090",
+      "sample_idx": 37,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本内容，Dr. Samuel Ferguson和他的同伴乘坐氢气球旅行的地点是非洲。具体来说，在这本书中描述了Dr. Ferguson和另外两位英国人的非洲探险之旅。他们跨越了非洲大陆的不同地区，包括不同的国家和地区，如肯尼亚、莫桑等。但是没有具体提到他们所经过的具体地理位置或城镇名称。",
+      "reference": "The African continent ",
+      "metrics": {
+        "f1": 0.13333333333333333
+      },
+      "elapsed_time": 2.7241225242614746,
+      "timestamp": "2025-12-18T21:09:33.457953",
+      "sample_idx": 38,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文档内容，文档中没有提到Dr. Ferguson的男仆名字。因此无法确定他的男仆是谁。",
+      "reference": "Joe. ",
+      "metrics": {
+        "f1": 0.13953488372093026
+      },
+      "elapsed_time": 2.316786527633667,
+      "timestamp": "2025-12-18T21:09:36.279166",
+      "sample_idx": 39,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有直接提到用于气球的气体类型。根据书名“Five Weeks in a Balloon”，可以推测这是一个关于通过热气球旅行的故事，所以使用的是热空气（热气球）。但是没有具体的说明是使用了哪种气体。因此，基于给定的信息，无法确定用于气球的具体气体类型。",
+      "reference": "Hydrogen",
+      "metrics": {
+        "f1": 0.07058823529411765
+      },
+      "elapsed_time": 2.7141377925872803,
+      "timestamp": "2025-12-18T21:09:39.500844",
+      "sample_idx": 40,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文档内容，五周在气球上的探险家们的主要焦点是在非洲的探索与发现。具体来说，他们在第一章中提到了几位著名的人名如伯儒、里希腾斯、奥韦格、维尔纳等，并且提到了一些探索者如巴尔克豪斯、瑞恩、佩尼、阿兰德、莱杰安、布拉斯特、雷本以及马赛尔和斯皮克，这表明他们的主要任务是在非洲进行探险活动。同时文中也提到了一些动物如大不列颠猴等也是他们旅程的一部分。因此，可以总结出这些探险家的主要关注点是探索和发现位于非洲的未知领域及其生物特征。",
+      "reference": "They are seeking out the source of the Nile River. ",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 3.4607319831848145,
+      "timestamp": "2025-12-18T21:09:43.466223",
+      "sample_idx": 41,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有直接描述非洲内部的景观特征，而是提到了一些非洲探险家的名字和他们的发现。因此，没有足够的信息来确定用来描述非洲内部景观特征的具体类型或描述。",
+      "reference": "Desert ",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.466171979904175,
+      "timestamp": "2025-12-18T21:09:46.436495",
+      "sample_idx": 42,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未提及当气球被Condor鸟群牵引时，Joe做出的决定。因此无法根据给定文本内容回答这个问题。",
+      "reference": "Joe jumps out of the balloon. ",
+      "metrics": {
+        "f1": 0.13114754098360656
+      },
+      "elapsed_time": 2.358682870864868,
+      "timestamp": "2025-12-18T21:09:49.300039",
+      "sample_idx": 43,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未直接提到Dick Kennedy的具体职业或他所从事的工作，只是描述了他的几个角色和经历，包括与Dr. Ferguson的友谊、在伦敦提出的建议以及旅行探险的经历等。因此，无法从给定的文本信息中明确得出Dick Kennedy的职业身份。",
+      "reference": "He is a professional hunter. ",
+      "metrics": {
+        "f1": 0.2061855670103093
+      },
+      "elapsed_time": 2.5843021869659424,
+      "timestamp": "2025-12-18T21:09:52.388783",
+      "sample_idx": 44,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本信息，没有明确提到任何一位特定的探险家在Areas around the regions of the Sahara and Chad之前有过探险经历。文本主要描述了三位英国人在热气球上的旅行和发现，并提到了一些非洲探险家的名字，如Barth、Richardson等，但并没有表明这些人物此前是否已经在Sahara和Chad周围的地区进行过考察或探险活动。因此，没有足够的信息来回答这个问题。",
+      "reference": "Heinrich Barth ",
+      "metrics": {
+        "f1": 0.18018018018018017
+      },
+      "elapsed_time": 2.8638341426849365,
+      "timestamp": "2025-12-18T21:09:55.757287",
+      "sample_idx": 45,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本内容，没有明确提到探险者们返回哪个国家的情节。文本主要描述了一次在非洲进行的为期五周的热气球之旅，以及几位英国人之间的友谊和冒险故事。因此，无法从给定的信息中确定探险者们最终返回了哪个国家。",
+      "reference": "England",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.6463119983673096,
+      "timestamp": "2025-12-18T21:09:58.908321",
+      "sample_idx": 46,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有直接说明探险家在非洲的旅程开始于哪个地点。文本主要描述了这次飞行计划和一些背景信息，包括演讲、挑战以及探险者的友谊等情节。因此，无法从给定的文本中确定探险家在非洲旅行的具体起点。",
+      "reference": "Zanzibar/on the east coast",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.5777909755706787,
+      "timestamp": "2025-12-18T21:10:01.991113",
+      "sample_idx": 47,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本内容，没有直接提到为什么探险家要救传教士。文本主要描述了探险的过程和一些事件，比如在“Twenty-Second”章节中提到了一次救援行动，但没有说明这个行动的原因是救传教士。因此，无法从给定的文本中得出关于探险家为何救传教士的信息。",
+      "reference": "The native tribe was preparing to sacrifice him. ",
+      "metrics": {
+        "f1": 0.14
+      },
+      "elapsed_time": 2.7536141872406006,
+      "timestamp": "2025-12-18T21:10:05.249893",
+      "sample_idx": 48,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有直接提到与Dr. Samuel Ferguson一同前往非洲的其他旅行者或同伴。根据提供的信息，Dr. Samuel Ferguson是这篇作品中的主角之一，他和其他人一起进行了在非洲的大冒险和探索。但是没有足够的信息来确定是否还有其他人陪同他进行这次旅行。",
+      "reference": "His friend, Richard \"Dick\" Kennedy and his manservant Joe",
+      "metrics": {
+        "f1": 0.2105263157894737
+      },
+      "elapsed_time": 2.5982470512390137,
+      "timestamp": "2025-12-18T21:10:08.352637",
+      "sample_idx": 49,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文档内容，Dr. Ferguson是一位地理发现领域的勇敢探险家，他的原籍并没有被明确提及。他被认为是英国最光荣的成员之一。因此可以推断出，Dr. Ferguson的职业是一名地理学家或探险者。",
+      "reference": "He was a scholar and an explorer",
+      "metrics": {
+        "f1": 0.16867469879518074
+      },
+      "elapsed_time": 2.524693012237549,
+      "timestamp": "2025-12-18T21:10:11.385981",
+      "sample_idx": 50,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中没有直接提到Joe为什么从气球上跳了下来，因此无法根据给出的文本内容来确定具体原因。文本描述了Joe和其他角色的一些冒险经历，但并没有详细说明Joe在何处或为何需要离开气球。",
+      "reference": "Because it was attacked by condors",
+      "metrics": {
+        "f1": 0.047619047619047616
+      },
+      "elapsed_time": 2.5312302112579346,
+      "timestamp": "2025-12-18T21:10:14.421701",
+      "sample_idx": 51,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未直接说明Dr. Samuel Ferguson的非洲之旅的具体目的。根据提供的背景信息，Dr. Samuel Ferguson在一次演讲中被称赞为英国最光荣的儿子，并且他的旅行计划旨在通过航空探索完成并连接关于非洲的各种观念。因此可以推测，Dr. Samuel Ferguson进行这次飞行探险的目的主要是为了探索和展示新的地理知识以及激发公众对非洲未知地区的兴趣与好奇心。但没有明确提到是否有特定的科学或实际目的，例如寻找新资源、研究动物种类等。",
+      "reference": "To link together the trips of Sir. Richard Burton and John Hanning Speke with those of Heinrich Barth",
+      "metrics": {
+        "f1": 0.16149068322981366
+      },
+      "elapsed_time": 3.0052804946899414,
+      "timestamp": "2025-12-18T21:10:17.931837",
+      "sample_idx": 52,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未提到他们第一次在非洲着陆的地方是哪里。因此，无法根据给定文本信息回答这个问题。文本主要介绍了《热气球五周》这本书的内容概要以及相关章节的标题，但没有具体描述探险活动中的地点。",
+      "reference": "Zanzibar",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.5866243839263916,
+      "timestamp": "2025-12-18T21:10:21.024228",
+      "sample_idx": 53,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未提及Mr. Kennedy的职业或他在做什么生活，只提到他和Dr. Ferguson是朋友。因此无法确定Mr. Kennedy具体的工作或职业。",
+      "reference": "He was a professional hunter",
+      "metrics": {
+        "f1": 0.24615384615384614
+      },
+      "elapsed_time": 2.4037675857543945,
+      "timestamp": "2025-12-18T21:10:23.933085",
+      "sample_idx": 54,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未明确说明或详细描述FIVE WEEKS IN A BALLOON的开始时的主要焦点或活动详情。根据提供的信息，开头部分主要讲述了1862年1月14日伦敦皇家地理学会第3个水楼街的一次会议背景，当时会场上座满了听众，在这次会议上，英国一个重要的通信被发表，并且在演讲中受到了热烈的掌声。演讲的主要内容是表扬探索者的勇气并提到Samuel Ferguson医生是一个非常光荣的儿子。因此，很难准确判断开始时的活动或主要焦点。",
+      "reference": "They wanted to find the source of the Nile",
+      "metrics": {
+        "f1": 0.1643835616438356
+      },
+      "elapsed_time": 3.2278897762298584,
+      "timestamp": "2025-12-18T21:10:27.666093",
+      "sample_idx": 55,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提及任何关于旅行起点的信息，因此无法根据给定的文本内容判断五周热气球之旅的出发点在哪里。",
+      "reference": "England",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.349738597869873,
+      "timestamp": "2025-12-18T21:10:30.520464",
+      "sample_idx": 56,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到他们从一个土著部落营救了谁。因此，无法根据给定的文本内容来确定他们是救援了谁。",
+      "reference": "A missionary man",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.313521146774292,
+      "timestamp": "2025-12-18T21:10:33.339072",
+      "sample_idx": 57,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文档内容，Olivia的前主人被称为Shah Amurath。 Olivia逃离了她与Shah Amurath的关系，因为他是她的主人，并且她提到了他将要来找她。因此，可以推断出Olivia试图逃离的前主人的名字是Shah Amurath。",
+      "reference": "Shah Amurath",
+      "metrics": {
+        "f1": 0.1791044776119403
+      },
+      "elapsed_time": 3.0588650703430176,
+      "timestamp": "2025-12-18T21:10:36.903846",
+      "sample_idx": 58,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到古代废墟上在离岛处的康纳恩和奥利维亚睡觉时被装饰过。因此，没有足够的信息来回答这个问题。文本主要讲述的是康纳恩如何逃脱并遇见了奥利维亚的故事。",
+      "reference": "Statues",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.489210844039917,
+      "timestamp": "2025-12-18T21:10:39.897973",
+      "sample_idx": 59,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文档内容，文档中并没有提到有人解救康纳（Conan）免于被海盗绑架或束缚。因此没有足够的信息来回答“谁解放了康纳免于那些把他打昏的海盗？”这个问题。文档主要描述了康纳逃离一些海盗的行为以及他与一个名叫奥利维娅的人物的相遇和互动，但并没有提到有其他人介入帮助他们。",
+      "reference": "Olivia",
+      "metrics": {
+        "f1": 0.040816326530612256
+      },
+      "elapsed_time": 2.7354187965393066,
+      "timestamp": "2025-12-18T21:10:43.141548",
+      "sample_idx": 60,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有直接提到Olivia正在逃离的城市名称。根据描述，Olivia似乎是逃跑的受害者，她逃脱了名为Shah Amurath的人，并且似乎被囚禁在某个地方（由“he followed me. That's why he came here”可知）。文中提到了Akif这个地方，但并不清楚这是城市还是其他地方。因此，无法确定Olivia是在逃离的城市名称。",
+      "reference": "Akif",
+      "metrics": {
+        "f1": 0.04347826086956522
+      },
+      "elapsed_time": 2.732452154159546,
+      "timestamp": "2025-12-18T21:10:46.379244",
+      "sample_idx": 61,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本描述，Conan和Olivia使用船来逃离那个荒废的岛屿。他们找到一艘隐藏在芦苇中的小船，并决定利用它逃往安全的地方。",
+      "reference": "Pirate ship",
+      "metrics": {
+        "f1": 0.0655737704918033
+      },
+      "elapsed_time": 2.3914554119110107,
+      "timestamp": "2025-12-18T21:10:49.276505",
+      "sample_idx": 62,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到任何关于Captain或海盗船的内容，因此无法根据给定的文本内容来回答这个问题。文本主要描述了一个名为Olivia的女孩与一个名叫Shah Amurath的人物相遇的故事，并没有涉及任何船员或船只的信息。",
+      "reference": "Conan slays him.",
+      "metrics": {
+        "f1": 0.2298850574712644
+      },
+      "elapsed_time": 2.5035276412963867,
+      "timestamp": "2025-12-18T21:10:52.285445",
+      "sample_idx": 63,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本内容，当他们离开岛屿时，并没有明确提到康纳（Conan）对奥利维娅（Olivia）说什么会让她做什么。文本主要讲述了康纳和奥利维娅在岛上的一系列事件，包括相遇、战斗以及逃跑等情节。最后，他们决定逃往内陆地区躲避追兵和风暴，以避免被发现而遭到攻击。因此，并没有直接提到康纳对奥利维娅说他将让她做什么。",
+      "reference": "Queen of the Blue Sea",
+      "metrics": {
+        "f1": 0.07017543859649122
+      },
+      "elapsed_time": 2.8009986877441406,
+      "timestamp": "2025-12-18T21:10:55.591954",
+      "sample_idx": 64,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文档内容，没有提及在船上的其他乘客或同伴。文档中提到的只有Olivia和Conan两人。他们似乎是逃离被Shah Amurath追捕的状态，准备离开一个荒岛。没有信息表明还有其他人与他们一起乘坐这艘船。",
+      "reference": "pirates from the ship",
+      "metrics": {
+        "f1": 0.21428571428571427
+      },
+      "elapsed_time": 2.578582763671875,
+      "timestamp": "2025-12-18T21:10:58.675469",
+      "sample_idx": 65,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "当康纳发现奥利维亚时，他正在沼泽中躲避。文本提到“我隐藏在沼泽中已有段时间了。只昨天才停止搜寻像我这样的逃亡者。”以及“这黎明我发现这条船隐藏在芦苇里。我没有打算天黑后出海，但杀死沙赫·阿慕拉兹后我知道他的甲胄狗会很快赶到这里。”",
+      "reference": "Marshes",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.7711052894592285,
+      "timestamp": "2025-12-18T21:11:01.951817",
+      "sample_idx": 66,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未提及任何关于“海盗”如何称呼岛屿的内容，因此无法根据给出的文本信息来回答这个问题。",
+      "reference": "\"Devil Island\"",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.3117806911468506,
+      "timestamp": "2025-12-18T21:11:04.768251",
+      "sample_idx": 67,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "The title of the story was \"Shadows in the Moonlight\".",
+      "reference": "Shadows in the Moonlight",
+      "metrics": {
+        "f1": 0.6153846153846153
+      },
+      "elapsed_time": 2.2005205154418945,
+      "timestamp": "2025-12-18T21:11:07.473796",
+      "sample_idx": 68,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Olivia fled the city of Akif.",
+      "reference": "Olivia",
+      "metrics": {
+        "f1": 0.34285714285714286
+      },
+      "elapsed_time": 2.1563026905059814,
+      "timestamp": "2025-12-18T21:11:10.135234",
+      "sample_idx": 69,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "The newcomer, who is described as a \"madman\" or \"savage,\" appears to be nearly mad due to his intense hatred and rage towards Shah Amurath. This hatred stems from the fact that Shah Amurath had previously captured him and treated him badly, forcing him to watch as Amurath's men consumed their companions in battle. The newcomer's eyes are described as bloodshot, indicating he has been under a lot of stress or suffering due to his traumatic experiences. His behavior becomes increasingly violent and irrational, leading him to demand quarter from Shah Amurath after the initial conflict, which shows how far gone he is emotionally and mentally.",
+      "reference": "He hidden in the reeds for so long",
+      "metrics": {
+        "f1": 0.6341463414634146
+      },
+      "elapsed_time": 3.0755743980407715,
+      "timestamp": "2025-12-18T21:11:13.719996",
+      "sample_idx": 70,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文档内容，他们并没有明确提到他们在旅行的途中第一次过夜的具体地点或情况。文档主要讲述了Olivia和Shah Amurath之间的冒险经历，以及他们如何逃出Shah Amurath，并没有提及具体的第一晚的住宿地。因此无法给出一个具体的回答。",
+      "reference": "In ancient ruins with lifelike statues",
+      "metrics": {
+        "f1": 0.19565217391304346
+      },
+      "elapsed_time": 2.5425360202789307,
+      "timestamp": "2025-12-18T21:11:16.767573",
+      "sample_idx": 71,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本内容，Conan 更加关心的是遇到海盗或者风暴时他们是否会饿死在草原上。具体来说，当Olivia问到是否有遇到海盗或风暴的可能时，以及是否会在大草原上饿死时，Conan 提到了这些情况对他们来说可能比Hyrkanian的追赶更为“温和”，暗示了他对于这些潜在危险后果的关注。",
+      "reference": "Something lurking in the jungle",
+      "metrics": {
+        "f1": 0.16666666666666666
+      },
+      "elapsed_time": 2.665323495864868,
+      "timestamp": "2025-12-18T21:11:19.938685",
+      "sample_idx": 72,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中没有提到任何关于岛屿上有什么进入港口的内容，因此无法根据给定的文本信息来回答这个问题。文本主要讲述了一个名叫奥利维亚的女孩和一个自称康斯坦（Conan）的男人之间的冒险故事，他们从岛上出发前往某个目的地。文本并未提及任何船舶或船只停靠的情况。",
+      "reference": "A pirate ship",
+      "metrics": {
+        "f1": 0.018867924528301883
+      },
+      "elapsed_time": 2.590826988220215,
+      "timestamp": "2025-12-18T21:11:23.034446",
+      "sample_idx": 73,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "The dark figure was a Hyrkanian warrior known as Conan who appeared to be a \"kozak\", a name Shah Amurath used for him. He wore only a loincloth stained with blood and dried mire, had black hair matted with mud and clotted blood, and wielded a long straight sword in his right hand. The author describes Conan as a barbarian who fed the narrator's companions to vultures and tortured them. Despite appearing naked and unarmed, Conan proved to be a formidable opponent for Shah Amurath, the hardened horseman.",
+      "reference": "A giant man ape",
+      "metrics": {
+        "f1": 0.4864864864864865
+      },
+      "elapsed_time": 2.957879066467285,
+      "timestamp": "2025-12-18T21:11:26.498190",
+      "sample_idx": 74,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未提及任何关于“ ruins”或“back at the ruins”的信息，因此无法根据给定的文本内容回答“What was happening back at the ruins?”的问题。文本主要讲述了Olivia和Shah Amurath之间的冲突以及他们如何逃到了船上，并且讨论了未来的计划。所以有关于古迹遗址的事情并未提及。",
+      "reference": "a horrific slaughter",
+      "metrics": {
+        "f1": 0.26
+      },
+      "elapsed_time": 2.6359481811523438,
+      "timestamp": "2025-12-18T21:11:29.639255",
+      "sample_idx": 75,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中没有提到任何与岛有关的内容，因此无法根据给定的文本内容回答“What was the island called?”这个问题。文本描述的是一个关于逃脱的故事，并不涉及岛屿或其名字。",
+      "reference": "Devil Island",
+      "metrics": {
+        "f1": 0.28571428571428575
+      },
+      "elapsed_time": 2.424760580062866,
+      "timestamp": "2025-12-18T21:11:32.569130",
+      "sample_idx": 76,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本内容，没有提到任何人被称为“蓝海之女王”。文本主要描述了角色康纳（Conan）的经历和冒险。因此，无法从给定的文本中得出答案来确定谁被称作“蓝海之女王”。",
+      "reference": "Olivia",
+      "metrics": {
+        "f1": 0.058823529411764705
+      },
+      "elapsed_time": 2.495166778564453,
+      "timestamp": "2025-12-18T21:11:35.569752",
+      "sample_idx": 77,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "At the start of the story, Olivia is escaping with a horseman named Shah Amurath. However, she soon realizes that Shah Amurath intends to harm her and does not intend for her to escape safely. She attempts to flee but is cornered by Shah Amurath's followers who are hunting for him.",
+      "reference": "Life in the city of Akif, under her former master, Shah Amurath.",
+      "metrics": {
+        "f1": 0.8260869565217392
+      },
+      "elapsed_time": 2.6614599227905273,
+      "timestamp": "2025-12-18T21:11:38.736206",
+      "sample_idx": 78,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "The mad man who defeats Olivia's pursuer turns out to be Conan, of Cimmeria.",
+      "reference": "Conan the Cimmerian.",
+      "metrics": {
+        "f1": 0.6857142857142856
+      },
+      "elapsed_time": 2.281320333480835,
+      "timestamp": "2025-12-18T21:11:41.523053",
+      "sample_idx": 79,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本，Conan和Olivia计划前往的避难所位于Vilayet西南岸。那里被Hykanian人控制了数百里。他们打算一直向北行进，直到认为已经过了那些Hyrkanians的边界，然后转向西行，试图在无人居住的大草原边上登陆。所以他们寻求庇护的地方是位于Vilayet西南岸。",
+      "reference": "In ancient ruins on a deserted island.",
+      "metrics": {
+        "f1": 0.20202020202020202
+      },
+      "elapsed_time": 2.7186765670776367,
+      "timestamp": "2025-12-18T21:11:44.750619",
+      "sample_idx": 80,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本内容，没有提到 Conan 和 Olivia 在古代废墟里过夜的情节，也没有提及 Olivia 对任何情况的担忧。因此无法从给定文本中得出关于他们是否在古废墟里度过的夜晚以及Olivia对什么感到担心的信息。请提供更具体的内容以便回答问题。",
+      "reference": "That the statues were once men, and they will come to life and attack them. ",
+      "metrics": {
+        "f1": 0.14583333333333334
+      },
+      "elapsed_time": 2.652168035507202,
+      "timestamp": "2025-12-18T21:11:47.908494",
+      "sample_idx": 81,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文档内容，Conan在被海盗俘虏之前做的事情是：\n1. 他是一名盗贼，和一群自由同伴一起，在东部科特为叛乱的王子服役。\n2. 当这个叛乱的王子与自己的王后和解时，他们失去了工作，并开始抢劫科特、萨摩拉以及图兰等地。\n3. 几周前，Shah Amurath率领15000人围住了Conan他们的所在地。\n\n因此，可以总结为：在被海盗俘虏之前，Conan是一名自由同伴成员，在东部科特服役，然后逃离了那里。",
+      "reference": "Kill the pirate captain.",
+      "metrics": {
+        "f1": 0.12698412698412698
+      },
+      "elapsed_time": 3.2959682941436768,
+      "timestamp": "2025-12-18T21:11:51.710013",
+      "sample_idx": 82,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未详细描述海盗对待康纳的行为，仅提到他因为反抗被绳绑。因此没有足够的信息来回答“Pirates do to Conan what?”这个问题。根据提供的信息，康纳被海盗绑起来后。",
+      "reference": "They talk about what to do with him, drink too much, and fall asleep.",
+      "metrics": {
+        "f1": 0.3146067415730337
+      },
+      "elapsed_time": 2.519805908203125,
+      "timestamp": "2025-12-18T21:11:54.734798",
+      "sample_idx": 83,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Based on the text provided, there is no mention of anyone freeing Conan from the pirates. The story focuses on Conan's experiences with Shah Amurath and his subsequent escape into a boat after being attacked by pirates. There are no details about other characters who come to free him from these pirates.",
+      "reference": "Olivia.",
+      "metrics": {
+        "f1": 0.35294117647058826
+      },
+      "elapsed_time": 2.6137993335723877,
+      "timestamp": "2025-12-18T21:11:57.853540",
+      "sample_idx": 84,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本内容，一个穿着骇人衣装的陌生人(被描述为一个疯狂或野蛮的人)跟随Olivia穿过丛林，并与她一同返回到废墟。这个陌生人后来在战斗中杀害了Shah Amurath，并试图伤害Olivia。所以在这些事件中，Olivia主要是在陌生人的带领下以及帮助下回到废墟的。",
+      "reference": "A giant man-ape.",
+      "metrics": {
+        "f1": 0.10638297872340424
+      },
+      "elapsed_time": 2.73030686378479,
+      "timestamp": "2025-12-18T21:12:01.088563",
+      "sample_idx": 85,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本内容，没有提到Olivia和Conan在击败那个\"人猿\"之后去了哪里。文本主要讲述了Olivia逃离并遇到了一个被称为Shah Amurath的敌人，然后他们之间发生了激烈的战斗。最后，文字段落结束于Olivia设法救了自己，并开始逃亡。因此，在这段描述中并未提及他们的下一站目的地。",
+      "reference": "To take over the pirate ship.",
+      "metrics": {
+        "f1": 0.17142857142857143
+      },
+      "elapsed_time": 2.801579475402832,
+      "timestamp": "2025-12-18T21:12:04.394871",
+      "sample_idx": 86,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的故事文本，当康纳（Conan）和他的伙伴们遇到了海盗或风暴时，他们最终会在无垠的荒漠地带登陆并寻求庇护。具体来说，在最后部分，他计划向北前进，直到他认为已经超越了那些占据南边土地的赫尔甘尼亚人；然后转向西行，试图在无人居住的荒漠地带登陆。\n\n故事没有详细描述当康纳和他的伙伴们遇到海盗或风暴时的具体情节和结果。所以，对于“他们最终会在无垠的荒漠地带登陆并寻求庇护”这一部分是基于作者留下的隐含信息进行推测，并非文本中明确提到的情节。",
+      "reference": "The pirates make him their captain.",
+      "metrics": {
+        "f1": 0.04255319148936171
+      },
+      "elapsed_time": 3.3434391021728516,
+      "timestamp": "2025-12-18T21:12:08.242778",
+      "sample_idx": 87,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本，Olivia是在名为Shah Amurath的地方被俘虏的。具体来说，她在逃跑的过程中遇到了Shah Amurath，并被他抓住了。所以答案是：Olivia是在Shah Amurath那里被俘虏的。",
+      "reference": "Akif",
+      "metrics": {
+        "f1": 0.07142857142857144
+      },
+      "elapsed_time": 2.56168794631958,
+      "timestamp": "2025-12-18T21:12:11.308727",
+      "sample_idx": 88,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文章内容，Olivia被困在一个靠近湿地的湖泊附近。虽然文中并没有直接提到具体的湖泊名称，但描述了她被围困在湿地中，并且提到了与湿地相邻的是一个“uninhabited steppes”（无人居住的草原）。结合这些信息可以推测，Olivia被困的地方很可能是一个湖泊附近的湿地区域。不过更准确的答案应该是文中提到的“uninhabited steppes”附近的某个湖或河。但由于提供的文本并未明确指出是哪片具体的水域，只能根据描述推断出她身处一个湖泊附近或者与无人居住的草原相邻的水边地区。",
+      "reference": "Vilayet Sea",
+      "metrics": {
+        "f1": 0.12903225806451613
+      },
+      "elapsed_time": 3.30031156539917,
+      "timestamp": "2025-12-18T21:12:15.113641",
+      "sample_idx": 89,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Olivia meets a newcomer named Conan. The text mentions that she meets \"a man\" who introduces himself as Conan of Cimmeria.",
+      "reference": "Conan",
+      "metrics": {
+        "f1": 0.09523809523809523
+      },
+      "elapsed_time": 2.350975751876831,
+      "timestamp": "2025-12-18T21:12:17.981728",
+      "sample_idx": 90,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据故事的内容，Olivia和Conan在逃亡Shah Amurath之后，并没有明确提到他们藏身的具体地点。他们在逃离的过程中乘坐了一条隐藏在芦苇中的小船，在逃离了沙赫·阿穆拉特的营地后，乘着这条小船漂到了开放水域上。所以，他们是在一条隐藏在芦苇中的船上继续逃亡的。具体的隐藏位置并没有提及。",
+      "reference": "Boat",
+      "metrics": {
+        "f1": 0.0697674418604651
+      },
+      "elapsed_time": 2.842165946960449,
+      "timestamp": "2025-12-18T21:12:21.328709",
+      "sample_idx": 91,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中没有提到任何关于Olivia在月光下的雕像或月亮的阴影中的雕像的内容。因此，根据提供的文本，无法回答这个问题。",
+      "reference": "That they will come to life",
+      "metrics": {
+        "f1": 0.14035087719298245
+      },
+      "elapsed_time": 2.387064218521118,
+      "timestamp": "2025-12-18T21:12:24.220985",
+      "sample_idx": 92,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到任何关于“出现在荒岛上”的情节或角色出现，因此没有足够的信息来回答这个问题。根据提供的文档内容，描述的是一个有关逃亡和战斗的故事，而不是发生在荒岛的情节。",
+      "reference": "Pirate ship",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.4874227046966553,
+      "timestamp": "2025-12-18T21:12:27.212838",
+      "sample_idx": 93,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本描述，Olivia之所以会逃走是因为被一位名叫Shah Amurath的首领追赶。Olivia是Shah Amurath的女儿之一（或她被认为是这个女儿），而Shah Amurath正在追捕Olivia逃离的那个人。所以可以理解为Olivia是在试图逃脱Shah Amurath的追逐和抓捕。文本中并未提到Olivia直接逃向了某个“古迹遗址”或者具体的目的地。",
+      "reference": "Dark Figure",
+      "metrics": {
+        "f1": 0.10526315789473684
+      },
+      "elapsed_time": 2.9791860580444336,
+      "timestamp": "2025-12-18T21:12:30.697327",
+      "sample_idx": 94,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并没有提到任何关于海盗和岛屿名称的信息，因此无法根据给出的文本内容来回答这个问题。",
+      "reference": "Devil Island",
+      "metrics": {
+        "f1": 0.0
+      },
+      "elapsed_time": 2.33479380607605,
+      "timestamp": "2025-12-18T21:12:33.537764",
+      "sample_idx": 95,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "文本中并未提到有人将 Conan 设为队长或船长，而是描述了 Conan 是一个寻求自由的流浪者，并且他是自己决定加入这艘船前往目的地。因此，没有相关信息来表明有谁让 Conan 成为了船长。",
+      "reference": "Pirates",
+      "metrics": {
+        "f1": 0.028169014084507043
+      },
+      "elapsed_time": 2.61196231842041,
+      "timestamp": "2025-12-18T21:12:36.654073",
+      "sample_idx": 96,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据文本，Conan表示他会拉着船桨直到他们找到一个安全的地方为止。他还提到打算向北航行直到他认为已经超过了Hyrkanian的边界，然后转向西行，并尝试在无人居住的大草原旁边登陆。所以可以说，Conan计划继续旅行，直到他们能找到一个可以安全停留的位置。文本并没有明确说明Conan对Olivia会做什么。",
+      "reference": "Make her \"Queen of the Blue Sea\"",
+      "metrics": {
+        "f1": 0.12612612612612611
+      },
+      "elapsed_time": 2.8046157360076904,
+      "timestamp": "2025-12-18T21:12:39.963807",
+      "sample_idx": 97,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "根据提供的文本内容，没有明确提到Olivia逃离了哪个城市。文本主要描述的是Olivia逃离了一位名叫Shah Amurath的马车夫，并且她逃到了一个丛林中。所以无法确定Olivia是否曾经逃离过某个具体的城市。文本更多地关注于Olivia在丛林中的遭遇和与Shah Amurath的关系，而没有提及她是从哪个城市逃离的。",
+      "reference": "Olivia has fled from Akif.",
+      "metrics": {
+        "f1": 0.21052631578947367
+      },
+      "elapsed_time": 2.9625139236450195,
+      "timestamp": "2025-12-18T21:12:43.433312",
+      "sample_idx": 98,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.1,
+      "context_length": 13104,
+      "prediction": "Shah Amurath and his warriors are chasing and pursuing Olivia.",
+      "reference": "Shah Amurath is chasing Olivia.",
+      "metrics": {
+        "f1": 0.888888888888889
+      },
+      "elapsed_time": 2.243206739425659,
+      "timestamp": "2025-12-18T21:12:46.182110",
+      "sample_idx": 99,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.15,
+      "context_length": 19660,
+      "prediction": "Miss Delmer is likely a misspelling or misunderstanding of \"Delmar\". In the text, Captain Delmar is mentioned multiple times. Therefore, Miss Delmer should be interpreted as referring to the Honourable Miss Delmar, who is described as the aunt of Captain Percival Keene (the narrator).",
+      "reference": "the elderly spinster aunt of the Earl de Verseley and Captain Delmar",
+      "metrics": {
+        "f1": 0.7916666666666666
+      },
+      "elapsed_time": 3.44857120513916,
+      "timestamp": "2025-12-18T21:12:50.141893",
+      "sample_idx": 0,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.15,
+      "context_length": 19660,
+      "prediction": "根据文章的内容，Arabella Mason 婚给Ben Keene。",
+      "reference": "Ben Keene, Delmar's valet",
+      "metrics": {
+        "f1": 0.5405405405405405
+      },
+      "elapsed_time": 3.0178561210632324,
+      "timestamp": "2025-12-18T21:12:53.664223",
+      "sample_idx": 1,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.15,
+      "context_length": 19660,
+      "prediction": "Percival Keene gets his name because the narrator (who is actually the baby from the previous story) was christened and registered in the church books as Percival Keene. His mother, who is now living at Chatham with Ben Keene, presented him with a Bible he could read.",
+      "reference": "Percival is Captain Delmar's first name, and Keene is Ben's last name",
+      "metrics": {
+        "f1": 0.782608695652174
+      },
+      "elapsed_time": 3.368791341781616,
+      "timestamp": "2025-12-18T21:12:57.538335",
+      "sample_idx": 2,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.15,
+      "context_length": 19660,
+      "prediction": "文本中并未提到有某个欺负Percival拿走他的午饭的欺霸人物，因此没有足够的信息来回答这个问题。",
+      "reference": "his teacher, Mr. O'Gallagher",
+      "metrics": {
+        "f1": 0.19999999999999998
+      },
+      "elapsed_time": 3.059514045715332,
+      "timestamp": "2025-12-18T21:13:01.102447",
+      "sample_idx": 3,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.15,
+      "context_length": 19660,
+      "prediction": "Based on the provided text, there is no information about Percival getting even with anyone named O'Gallagher or any incident involving fireworks. The text discusses Percival Keene and his mother moving to Chatham, but does not mention O'Gallagher or any conflict related to fireworks. Therefore, it's not possible to answer how Percival got even with O'Gallagher as there is no relevant information in the given text.",
+      "reference": "He sets them on fire with the teacher sitting on them",
+      "metrics": {
+        "f1": 0.7142857142857143
+      },
+      "elapsed_time": 3.5496461391448975,
+      "timestamp": "2025-12-18T21:13:05.156288",
+      "sample_idx": 4,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.15,
+      "context_length": 19660,
+      "prediction": "Based on the information provided in the given text, there is no mention of Percival convincing pirates to spare anyone. The text focuses on Percival's life events and his mother's circumstances, but it doesn't involve a situation where he convinces pirates to spare someone. Therefore, I cannot provide an answer regarding who Percival convinced pirates to spare as that information is not present in the given text.",
+      "reference": "a rich Dutch merchant and his daughter Minnie",
+      "metrics": {
+        "f1": 0.7000000000000001
+      },
+      "elapsed_time": 3.576247453689575,
+      "timestamp": "2025-12-18T21:13:09.237249",
+      "sample_idx": 5,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.15,
+      "context_length": 19660,
+      "prediction": "文本中没有提到Percival如何救了Delmar船长的生命，因此没有相关信息来回答这个问题。",
+      "reference": "When the captain is ill, Percival takes his place in a duel with a French officer",
+      "metrics": {
+        "f1": 0.29508196721311475
+      },
+      "elapsed_time": 2.9539999961853027,
+      "timestamp": "2025-12-18T21:13:12.696439",
+      "sample_idx": 6,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.15,
+      "context_length": 19660,
+      "prediction": "Percival的妈妈承认了她向Delmar太太隐瞒了自己的孩子实际上是Ben Keene和Bella Keene的孩子这一事实，这显然是一个非常震惊的消息。",
+      "reference": "Captain Delmar is Percival's father",
+      "metrics": {
+        "f1": 0.37499999999999994
+      },
+      "elapsed_time": 3.074096918106079,
+      "timestamp": "2025-12-18T21:13:16.275761",
+      "sample_idx": 7,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.15,
+      "context_length": 19660,
+      "prediction": "文本中并未提及Percival被法国人俘虏的情况，因此无法根据给定文本内容来回答这个问题。",
+      "reference": "he is sentenced to execution",
+      "metrics": {
+        "f1": 0.11111111111111112
+      },
+      "elapsed_time": 2.9437313079833984,
+      "timestamp": "2025-12-18T21:13:19.723916",
+      "sample_idx": 8,
+      "repeat": 0
+    },
+    {
+      "model": "qwen2.5:3b",
+      "model_key": "qwen2.5-3b",
+      "dataset": "narrativeqa",
+      "task_type": "reading_comprehension",
+      "context_ratio": 0.15,
+      "context_length": 19660,
+      "prediction": "根据文章的内容，Percival在故事的结尾并没有直接从母亲那里得到什么特别的信息或新闻。文章主要讲述了Percival的家庭背景和成长经历，包括他出生时母亲与父亲的关系变化以及他们搬家的情景。在故事最后，Percival的母亲因为母亲对家庭的不忠感到沮丧，并决定搬到Chatham去生活。文章并未提到任何新的信息或事件发生让Percival接到通知或有任何新知。\n\n总结来说，没有明确的信息指出Percival从他母亲那里接收到任何特别的消息或新闻。",
+      "reference": "He has been granted the right to use his father's name, Delmar",
+      "metrics": {
+        "f1": 0.125
+      },
+      "elapsed_time": 3.9034383296966553,
+      "timestamp": "2025-12-18T21:13:24.132354",
+      "sample_idx": 9,
+      "repeat": 0
+    }
+  ],
+  "timestamp": "2025-12-18T21:13:24.138085"
+}
