@@ -1,22 +1,22 @@
-# 实验依赖包
-
-# 核心依赖
-requests>=2.31.0
+# Core scientific stack
 numpy>=1.24.0
 pandas>=2.0.0
-scipy>=1.10.0  # 用于显著性检验和曲线拟合
+scipy>=1.10.0
 
-# 数据集加载（用于下载真实数据集）
-datasets>=2.14.0
-
-# 评估指标
-rouge-score>=0.1.2
-nltk>=3.8.1
-
-# 可视化
-matplotlib>=3.7.0
-seaborn>=0.12.0
-
-# 其他工具
+# HTTP and utilities
+requests>=2.31.0
 tqdm>=4.65.0
 
+# NLP and model tooling
+torch>=2.1.0
+transformers>=4.36.0
+accelerate>=0.24.0
+safetensors>=0.4.0
+tiktoken>=0.5.0
+datasets>=2.14.0
+nltk>=3.8.1
+rouge-score>=0.1.2
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0

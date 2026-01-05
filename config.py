@@ -99,6 +99,7 @@ def get_model_max_context(model_name: str, default: int = 131072) -> int:
 QWEN_MODELS = {
     "qwen2.5-32b": {
         "ollama_name": "qwen2.5:32b",
+        "vllm_name": "qwen2.5-32b",
         "params": "32B",
         "max_context": None,  # 将自动从get_model_max_context获取
         "expected_threshold": 0.25,  # 预期临界点25%
@@ -106,6 +107,7 @@ QWEN_MODELS = {
     },
     "qwen2.5-7b": {
         "ollama_name": "qwen2.5:7b",
+        "vllm_name": "qwen2.5-7b",
         "params": "7B",
         "max_context": None,  # 将自动从get_model_max_context获取
         "expected_threshold": 0.25,
@@ -113,6 +115,7 @@ QWEN_MODELS = {
     },
     "qwen2.5-3b": {
         "ollama_name": "qwen2.5:3b",
+        "vllm_name": "qwen2.5-3b",
         "params": "3B",
         "max_context": None,  # 将自动从get_model_max_context获取
         "expected_threshold": 0.25,
@@ -132,7 +135,7 @@ TASK_TYPE_TO_DIR = {
 CONTEXT_LENGTH_POINTS = {
     "fine_grained": [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50],
     "coarse_grained": [0.60, 0.70, 0.80, 0.90, 1.00],
-    "all": [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 
+    "all": [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50,
             0.60, 0.70, 0.80, 0.90, 1.00],
     "ten_percent": [0.10, 0.20, 0.30, 0.40, 0.50, 0.60, 0.70, 0.80, 0.90],  # 10%间隔，共9个测试点
     # 密集测试点（用于断崖优化，test_round3）
@@ -225,6 +228,13 @@ EXPERIMENT_CONFIG = {
 OLLAMA_CONFIG = {
     "base_url": "http://localhost:11434",
     "api_endpoint": "/api/generate",
+    "timeout": 300
+}
+
+# vLLM配置
+VLLM_CONFIG = {
+    "base_url": "http://localhost:11434/v1",
+    "api_key": None,
     "timeout": 300
 }
 

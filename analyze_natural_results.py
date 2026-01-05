@@ -12,6 +12,10 @@ from typing import List, Dict, Tuple
 import numpy as np
 from scipy import stats
 from scipy.interpolate import UnivariateSpline
+import matplotlib.pyplot as plt
+import matplotlib
+import matplotlib.font_manager as fm
+import os
 
 logging.basicConfig(
     level=logging.INFO,
@@ -19,15 +23,25 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-try:
-    import matplotlib.pyplot as plt
-    import matplotlib
-    matplotlib.rcParams['font.sans-serif'] = ['SimHei', 'Arial Unicode MS', 'DejaVu Sans']
+
+font_path = '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc'
+
+if os.path.exists(font_path):
+    fm.fontManager.addfont(font_path)
+    custom_font = fm.FontProperties(fname=font_path)
+    font_name = custom_font.get_name()
+    logger.info(f"成功加载字体文件: {font_path}")
+    logger.info(f"该字体的注册名称为: {font_name}")
+
+    matplotlib.rcParams['font.sans-serif'] = [font_name, 'sans-serif']
+    matplotlib.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
+    HAS_MATPLOTLIB = True
+else:
+    logger.error(f"❌ 错误：找不到字体文件 {font_path}，请确认路径是否正确！")
+    # 回退方案
+    matplotlib.rcParams['font.sans-serif'] = ['SimHei', 'WenQuanYi Micro Hei', 'sans-serif']
     matplotlib.rcParams['axes.unicode_minus'] = False
     HAS_MATPLOTLIB = True
-except ImportError:
-    logger.warning("matplotlib未安装，无法生成图表。请运行: pip install matplotlib")
-    HAS_MATPLOTLIB = False
 
 
 class NaturalLengthAnalyzer:

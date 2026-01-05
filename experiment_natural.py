@@ -19,9 +19,11 @@ from config import (
     DATASETS,
     EXPERIMENT_CONFIG,
     RESULTS_CONFIG,
+    OLLAMA_CONFIG,
+    VLLM_CONFIG,
     get_model_max_context
 )
-from utils.ollama_client import OllamaClient, test_ollama_connection
+from utils import OllamaClient, VLLMClient
 from utils.dataset_loader import get_dataset_loader
 from utils.evaluator import get_evaluator
 
@@ -35,25 +37,36 @@ logger = logging.getLogger(__name__)
 
 class NaturalLengthExperimentRunner:
     """基于自然长度分布的实验运行器"""
-    
-    def __init__(self, results_dir: str = "results", ollama_url: str = "http://localhost:11434", dataset_name: str = None):
+
+    def __init__(
+        self,
+        results_dir: str = "results",
+        ollama_url: str = OLLAMA_CONFIG["base_url"],
+        vllm_url: str = VLLM_CONFIG["base_url"],
+        vllm_api_key: Optional[str] = None,
+        llm_backend: str = "ollama",
+        dataset_name: str = None
+    ):
         """
         初始化实验运行器
-        
+
         Args:
             results_dir: 结果保存目录
             ollama_url: Ollama服务地址
+            vllm_url: vLLM服务基地址（OpenAI兼容接口）
+            vllm_api_key: vLLM API key，放在Authorization头里
+            llm_backend: 服务类型，支持 ollama 或 vllm
             dataset_name: 数据集名称
         """
         self.results_dir = Path(results_dir)
         self.results_dir.mkdir(exist_ok=True)
         self.dataset_name = dataset_name
-        
+
         if dataset_name:
             self.dataset_dir = self.results_dir / dataset_name
             self.dataset_dir.mkdir(exist_ok=True)
             logger.info(f"结果将保存到: {self.dataset_dir}")
-            
+
             self.logs_dir = Path(RESULTS_CONFIG["logs_dir"]) / dataset_name
             self.logs_dir.mkdir(parents=True, exist_ok=True)
             logger.info(f"日志将保存到: {self.logs_dir}")
@@ -61,10 +74,22 @@ class NaturalLengthExperimentRunner:
             self.dataset_dir = self.results_dir
             self.logs_dir = Path(RESULTS_CONFIG["logs_dir"])
             self.logs_dir.mkdir(exist_ok=True)
-        
-        self.ollama_client = OllamaClient(base_url=ollama_url)
+
+        self.llm_backend = (llm_backend or "ollama").lower()
+        if self.llm_backend not in {"ollama", "vllm"}:
+            logger.warning(f"不支持的后端 {self.llm_backend}，使用 ollama")
+            self.llm_backend = "ollama"
+
+        if self.llm_backend == "vllm":
+            self.llm_client = VLLMClient(base_url=vllm_url, api_key=vllm_api_key, timeout=EXPERIMENT_CONFIG["timeout"])
+            self.base_url = vllm_url
+        else:
+            self.llm_client = OllamaClient(base_url=ollama_url, timeout=EXPERIMENT_CONFIG["timeout"])
+            self.base_url = ollama_url
+        logger.info(f"LLM后端: {self.llm_backend}, 地址: {self.base_url}")
+
         self.results = []
-        
+
         # 初始化tokenizer（用于计算token数）
         try:
             self.tokenizer = tiktoken.get_encoding("cl100k_base")
@@ -72,14 +97,14 @@ class NaturalLengthExperimentRunner:
         except Exception as e:
             logger.warning(f"无法加载 tiktoken: {e}，将使用近似方法计算token数")
             self.tokenizer = None
-    
+
     def count_tokens(self, text: str) -> int:
         """
         计算文本的token数
-        
+
         Args:
             text: 输入文本
-            
+
         Returns:
             token数量
         """
@@ -88,21 +113,29 @@ class NaturalLengthExperimentRunner:
                 return len(self.tokenizer.encode(text))
             except Exception as e:
                 logger.warning(f"tokenizer计算失败: {e}，使用近似方法")
-        
+
         # 备用方法：近似估算
         # 英文: ~4 chars per token, 中文: ~1.5 chars per token
         # 使用保守估计：2.5 chars per token
         return len(text) // 2
-    
+
+    def get_model_name(self, model_info: Dict, model_key: str) -> str:
+        """
+        根据后端返回正确的模型名称。
+        """
+        if self.llm_backend == "vllm":
+            return model_info.get("vllm_name") or model_key
+        return model_info.get("ollama_name") or model_key
+
     def build_prompt(self, task_type: str, context: str, question: str = "") -> str:
         """
         构建任务提示词
-        
+
         Args:
             task_type: 任务类型
             context: 上下文文本
             question: 问题（某些任务需要）
-            
+
         Returns:
             完整的提示词
         """
@@ -115,7 +148,7 @@ class NaturalLengthExperimentRunner:
 问题：{question}
 
 请直接给出答案，不需要解释。""",
-            
+
             "summarization": """请阅读以下文本，生成简洁准确的摘要。
 
 文本：
@@ -123,10 +156,10 @@ class NaturalLengthExperimentRunner:
 
 请总结文本的主要内容，生成一个简洁的摘要。"""
         }
-        
+
         template = task_templates.get(task_type, task_templates["reading_comprehension"])
         return template.format(context=context, question=question)
-    
+
     def run_single_sample(self,
                           model_name: str,
                           model_key: str,
@@ -136,34 +169,34 @@ class NaturalLengthExperimentRunner:
                           max_context_tokens: int) -> Dict:
         """
         运行单个样本的实验（使用自然长度）
-        
+
         Args:
-            model_name: 模型名称（ollama格式）
+            model_name: 模型名称（按后端要求格式）
             model_key: 模型键名
             dataset_name: 数据集名称
             task_type: 任务类型
             sample: 数据样本
             max_context_tokens: 模型最大上下文token数
-            
+
         Returns:
             实验结果字典
         """
         context = sample.get("context", "")
         question = sample.get("question", "")
-        
+
         # 计算自然token长度
         prompt = self.build_prompt(task_type, context, question)
         total_tokens = self.count_tokens(prompt)
         natural_ratio = total_tokens / max_context_tokens if max_context_tokens > 0 else 0
-        
+
         logger.info(f"样本 {sample.get('id', 'unknown')}: "
                    f"tokens={total_tokens}, ratio={natural_ratio:.2%}, "
                    f"model={model_name}, task={task_type}")
-        
+
         # 调用模型（使用完整的原始文本，不截断）
         start_time = time.time()
         try:
-            response = self.ollama_client.generate(
+            response = self.llm_client.generate(
                 model=model_name,
                 prompt=prompt,
                 temperature=EXPERIMENT_CONFIG["temperature"],
@@ -175,10 +208,10 @@ class NaturalLengthExperimentRunner:
             logger.error(f"模型调用失败: {e}")
             elapsed_time = time.time() - start_time
             prediction = ""
-        
+
         # 评估结果
         evaluator = get_evaluator(task_type)
-        
+
         # 提取reference
         reference = ""
         if isinstance(sample.get("answers"), list) and len(sample["answers"]) > 0:
@@ -188,7 +221,7 @@ class NaturalLengthExperimentRunner:
                 reference = sample["answers"][0]
         elif isinstance(sample.get("answers"), str):
             reference = sample["answers"]
-        
+
         # 计算评估指标
         if reference:
             metrics = evaluator.evaluate(prediction, reference, context=context)
@@ -203,9 +236,9 @@ class NaturalLengthExperimentRunner:
                     metrics = {'f1': 0.0}
                 else:
                     metrics = {}
-        
+
         logger.info(f"实验完成: metrics={metrics}")
-        
+
         # 返回结果
         result = {
             "sample_id": sample.get("id", "unknown"),
@@ -224,9 +257,9 @@ class NaturalLengthExperimentRunner:
             "elapsed_time": elapsed_time,
             "timestamp": datetime.now().isoformat()
         }
-        
+
         return result
-    
+
     def run_experiment(self,
                       model_keys: List[str],
                       dataset_name: str,
@@ -235,7 +268,7 @@ class NaturalLengthExperimentRunner:
                       max_ratio: float = 0.95) -> None:
         """
         运行完整实验
-        
+
         Args:
             model_keys: 模型键名列表
             dataset_name: 数据集名称
@@ -252,25 +285,25 @@ class NaturalLengthExperimentRunner:
         logger.info(f"任务类型: {task_types}")
         logger.info(f"最大样本数: {max_samples}")
         logger.info(f"最大比率过滤: {max_ratio:.0%}")
-        
+
         # 加载数据集
         logger.info(f"\n加载数据集: {dataset_name}")
         dataset_loader = get_dataset_loader(dataset_name, max_samples=max_samples * 3)  # 多加载一些用于过滤
         all_samples = dataset_loader.load()
         logger.info(f"初始加载了 {len(all_samples)} 个样本")
-        
+
         # 遍历所有配置
         total_configs = len(model_keys) * len(task_types)
         current_config = 0
-        
+
         for model_key in model_keys:
             model_info = QWEN_MODELS[model_key]
-            model_name = model_info['ollama_name']
+            model_name = self.get_model_name(model_info, model_key)
             max_context_tokens = get_model_max_context(model_key)
-            
-            logger.info(f"\n测试模型: {model_key} ({model_name})")
+
+            logger.info(f"\n测试模型: {model_key} ({model_name}) 后端={self.llm_backend}")
             logger.info(f"最大上下文: {max_context_tokens} tokens")
-            
+
             # 过滤样本：只保留自然长度在合理范围内的样本
             # 注意：这里使用第一个任务类型来估算token数，因为不同任务类型的prompt模板可能略有不同
             # 但主要token数来自context和question，所以这个估算应该是合理的
@@ -286,21 +319,21 @@ class NaturalLengthExperimentRunner:
                 prompt = self.build_prompt(first_task_type, context, question)
                 estimated_tokens = self.count_tokens(prompt)  # 使用tiktoken精确计算
                 ratio = estimated_tokens / max_context_tokens if max_context_tokens > 0 else 0
-                
+
                 if ratio < max_ratio:
                     filtered_samples.append(sample)
                     if len(filtered_samples) >= max_samples:
                         break
-            
+
             samples = filtered_samples[:max_samples]
             logger.info(f"过滤后保留 {len(samples)} 个样本")
-            
+
             if len(samples) == 0:
                 logger.warning(f"没有合适的样本，跳过模型 {model_key}")
                 continue
-            
+
             # 检查模型可用性
-            if not self.ollama_client.check_model_available(model_name):
+            if not self.llm_client.check_model_available(model_name):
                 logger.error(f"模型 {model_name} 不可用，跳过")
                 continue
             
