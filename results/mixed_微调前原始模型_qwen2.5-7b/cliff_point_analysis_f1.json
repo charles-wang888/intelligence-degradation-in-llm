@@ -1,0 +1,151 @@
+{
+  "gradient": {
+    "method": "gradient",
+    "detected": true,
+    "cliff_ratio": 0.5833206176757812,
+    "cliff_ratio_percent": 58.332061767578125,
+    "peak_value": 0.962962962962963,
+    "drop_percentage": 0.49293511613963814,
+    "index": 334,
+    "sustained_decline": false,
+    "all_peaks": [
+      {
+        "ratio": 0.5833206176757812,
+        "ratio_percent": 58.332061767578125,
+        "value": 0.962962962962963,
+        "index": 334,
+        "sustained_decline": false,
+        "drop_percentage": 0.49293511613963814,
+        "post_peak_mean": 0.4882847029766448,
+        "max_rebound": 0.923076923076923,
+        "rebound_ratio": 0.9585798816568046,
+        "slope": -0.0014153009473657017,
+        "has_significant_rebound": false
+      }
+    ]
+  },
+  "second_derivative": {
+    "method": "second_derivative",
+    "detected": true,
+    "cliff_ratio": 0.5833206176757812,
+    "cliff_ratio_percent": 58.332061767578125,
+    "peak_value": 0.962962962962963,
+    "drop_percentage": 0.49293511613963814,
+    "index": 334,
+    "sustained_decline": false,
+    "all_peaks": [
+      {
+        "ratio": 0.5833206176757812,
+        "ratio_percent": 58.332061767578125,
+        "value": 0.962962962962963,
+        "index": 334,
+        "sustained_decline": false,
+        "drop_percentage": 0.49293511613963814,
+        "post_peak_mean": 0.4882847029766448,
+        "max_rebound": 0.923076923076923,
+        "rebound_ratio": 0.9585798816568046,
+        "slope": -0.0014153009473657017,
+        "has_significant_rebound": false
+      }
+    ]
+  },
+  "binned": {
+    "method": "binned",
+    "detected": true,
+    "cliff_ratio": 0.5455232620239259,
+    "cliff_ratio_percent": 54.552326202392585,
+    "peak_value": 0.6329896954007534,
+    "before_performance": 0.6329896954007534,
+    "after_performance": 0.45866819648743085,
+    "drop_percentage": 0.275393896898997,
+    "sustained_decline": true,
+    "n_bins": 20
+  },
+  "percentile": {
+    "method": "percentile",
+    "detected": true,
+    "cliff_ratio": 0.5833206176757812,
+    "cliff_ratio_percent": 58.332061767578125,
+    "peak_value": 0.962962962962963,
+    "drop_percentage": 0.49293511613963814,
+    "index": 334,
+    "sustained_decline": false,
+    "all_peaks": [
+      {
+        "ratio": 0.5833206176757812,
+        "ratio_percent": 58.332061767578125,
+        "value": 0.962962962962963,
+        "index": 334,
+        "sustained_decline": false,
+        "drop_percentage": 0.49293511613963814,
+        "post_peak_mean": 0.4882847029766448,
+        "max_rebound": 0.923076923076923,
+        "rebound_ratio": 0.9585798816568046,
+        "slope": -0.0014153009473657017,
+        "has_significant_rebound": false
+      }
+    ]
+  },
+  "sliding_window": {
+    "method": "sliding_window",
+    "detected": true,
+    "cliff_ratio": 0.5833206176757812,
+    "cliff_ratio_percent": 58.332061767578125,
+    "peak_value": 0.962962962962963,
+    "drop_percentage": 0.49293511613963814,
+    "index": 334,
+    "sustained_decline": false,
+    "all_peaks": [
+      {
+        "ratio": 0.5833206176757812,
+        "ratio_percent": 58.332061767578125,
+        "value": 0.962962962962963,
+        "index": 334,
+        "sustained_decline": false,
+        "drop_percentage": 0.49293511613963814,
+        "post_peak_mean": 0.4882847029766448,
+        "max_rebound": 0.923076923076923,
+        "rebound_ratio": 0.9585798816568046,
+        "slope": -0.0014153009473657017,
+        "has_significant_rebound": false
+      }
+    ]
+  },
+  "summary": {
+    "n_methods_detected": 5,
+    "n_methods_total": 5,
+    "final_cliff_ratio": 0.5833206176757812,
+    "final_cliff_ratio_percent": 58.332061767578125,
+    "average_cliff_ratio": 0.5757611465454102,
+    "average_cliff_ratio_percent": 57.57611465454102,
+    "median_cliff_ratio": 0.5833206176757812,
+    "median_cliff_ratio_percent": 58.332061767578125,
+    "std_cliff_ratio": 0.015118942260742152,
+    "min_cliff_ratio": 0.5455232620239259,
+    "max_cliff_ratio": 0.5833206176757812,
+    "consistency": "高",
+    "confidence": "高",
+    "detected_methods": [
+      "gradient",
+      "second_derivative",
+      "binned",
+      "percentile",
+      "sliding_window"
+    ],
+    "all_candidate_peaks": [
+      {
+        "ratio": 0.5833206176757812,
+        "ratio_percent": 58.332061767578125,
+        "value": 0.962962962962963,
+        "index": 334,
+        "sustained_decline": false,
+        "drop_percentage": 0.49293511613963814,
+        "post_peak_mean": 0.4882847029766448,
+        "max_rebound": 0.923076923076923,
+        "rebound_ratio": 0.9585798816568046,
+        "slope": -0.0014153009473657017,
+        "has_significant_rebound": false
+      }
+    ]
+  }
+}

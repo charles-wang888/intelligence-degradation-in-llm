@@ -27,8 +27,14 @@ python prepare_datasets.py
 ### 2. 运行自然长度实验
 
 ```bash
+# 方式一：ollama(默认)
 # 完整实验（1000个样本）
 python main_natural.py --dataset mixed --model qwen2.5-7b --task reading_comprehension --max-samples 1000
+```
+
+```bash
+# 方式二：vllm
+python main_natural.py --dataset mixed --model qwen2.5-7b --task reading_comprehension --max-samples 1000 --llm-backend vllm --vllm-url xxxxx --vllm-api-key xxxxx
 ```
 
 ### 3. 分析结果并生成可视化
@@ -172,7 +178,8 @@ python detect_cliff_point.py --results-dir results/mixed --model qwen2.5-7b --da
 │   ├── __init__.py
 │   ├── dataset_loader.py              # 数据集加载器（包含MixedLoader）
 │   ├── evaluator.py                  # 评估器（F1计算）
-│   └── ollama_client.py              # Ollama API客户端
+│   ├── ollama_client.py              # Ollama API客户端
+│   └── vllm_client.py                # Vllm API客户端
 ├── results/
 │   └── mixed/                         # 混合数据集结果
 └── plots/

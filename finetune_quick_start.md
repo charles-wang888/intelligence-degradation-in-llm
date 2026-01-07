@@ -10,7 +10,8 @@
 ### 2. 软件要求
 ```bash
 # 安装依赖
-pip install torch transformers accelerate tiktoken datasets
+pip install --default-timeout=6000 -r requirements.txt
+pip install flash-attn --no-build-isolation
 ```
 
 ## 步骤1：下载模型到本地（推荐）
@@ -46,7 +47,7 @@ python finetune_download_model.py \
 ```bash
 python finetune_prepare_dataset.py \
     --input-dir data \
-    --output-file data/finetune_dataset.json \
+    --output-file data_finetune/finetune_dataset.json \
     --max-context-length 131072 \
     --cliff-start 0.40 \
     --cliff-end 0.50 \
@@ -57,38 +58,52 @@ python finetune_prepare_dataset.py \
 1. 加载SQuAD和NarrativeQA数据
 2. 识别临界区域（40-50%）的样本
 3. 进行数据增强（段落重排、上下文切片等）
-4. 保存到 `data/finetune_dataset.json`
+4. 保存到 `data_finetune/finetune_dataset.json`
 
 ## 步骤3：运行微调
 
 ### 方式1：使用本地模型（推荐）
 
 ```bash
-python finetune_cliff_mitigation.py \
-    --model models/qwen2.5-7b-instruct \
-    --data-dir data \
-    --output-dir finetune_output \
-    --batch-size 1 \
-    --learning-rate 2e-5 \
-    --num-epochs 3 \
-    --critical-weight 3.0 \
-    --enable-rope-tuning \
-    --enable-data-aug \
-    --augmentation-ratio 2.0
+PYTORCH_ALLOC_CONF=expandable_segments:True CUDA_VISIBLE_DEVICES=4,5 torchrun \
+    --nproc_per_node=2 --master_addr=127.0.0.1 --master_port=29502 \
+    finetune_cliff_mitigation.py \
+      --model /data/models/Qwen/Qwen2.5-7B-Instruct \
+      --data-dir data_finetune \
+      --output-dir finetune_output \
+      --batch-size 1 \
+      --learning-rate 2e-5 \
+      --num-epochs 3 \
+      --critical-weight 3.0 \
+      --enable-rope-tuning \
+      --enable-data-aug \
+      --augmentation-ratio 2.0 \
+      --deepspeed ds_zero3_config.json \
+      --grad-accum-steps 8 \
+      --attn-impl flash_attention_2 \
+      --max-context-length 32768
 ```
 
 ### 方式2：直接从HuggingFace下载（不推荐）
 
 ```bash
-python finetune_cliff_mitigation.py \
-    --model Qwen/Qwen2.5-7B-Instruct \
-    --data-dir data \
-    --output-dir finetune_output \
-    --batch-size 1 \
-    --learning-rate 2e-5 \
-    --num-epochs 3 \
-    --critical-weight 3.0 \
-    --enable-rope-tuning
+PYTORCH_ALLOC_CONF=expandable_segments:True CUDA_VISIBLE_DEVICES=4,5 torchrun \
+    --nproc_per_node=2 --master_addr=127.0.0.1 --master_port=29502 \
+    finetune_cliff_mitigation.py \
+      --model Qwen/Qwen2.5-7B-Instruct \
+      --data-dir data_finetune \
+      --output-dir finetune_output \
+      --batch-size 1 \
+      --learning-rate 2e-5 \
+      --num-epochs 3 \
+      --critical-weight 3.0 \
+      --enable-rope-tuning \
+      --enable-data-aug \
+      --augmentation-ratio 2.0 \
+      --deepspeed ds_zero3_config.json \
+      --grad-accum-steps 8 \
+      --attn-impl flash_attention_2 \
+      --max-context-length 32768
 ```
 
 **注意**：如果网络不稳定，建议先下载到本地。
@@ -104,20 +119,30 @@ python finetune_download_model.py \
 # 2. 准备数据集
 python finetune_prepare_dataset.py \
     --input-dir data \
-    --output-file data/finetune_dataset.json \
+    --output-file data_finetune/finetune_dataset.json \
+    --max-context-length 131072 \
+    --cliff-start 0.40 \
+    --cliff-end 0.50 \
     --augmentation-ratio 2.0
 
 # 3. 运行微调
-python finetune_cliff_mitigation.py \
-    --model models/qwen2.5-7b-instruct \
-    --data-dir data \
-    --output-dir finetune_output \
-    --batch-size 1 \
-    --learning-rate 2e-5 \
-    --num-epochs 3 \
-    --critical-weight 3.0 \
-    --enable-rope-tuning \
-    --enable-data-aug
+PYTORCH_ALLOC_CONF=expandable_segments:True CUDA_VISIBLE_DEVICES=4,5 torchrun \
+    --nproc_per_node=2 --master_addr=127.0.0.1 --master_port=29502 \
+    finetune_cliff_mitigation.py \
+      --model /data/models/Qwen/Qwen2.5-7B-Instruct \
+      --data-dir data_finetune \
+      --output-dir finetune_output \
+      --batch-size 1 \
+      --learning-rate 2e-5 \
+      --num-epochs 3 \
+      --critical-weight 3.0 \
+      --enable-rope-tuning \
+      --enable-data-aug \
+      --augmentation-ratio 2.0 \
+      --deepspeed ds_zero3_config.json \
+      --grad-accum-steps 8 \
+      --attn-impl flash_attention_2 \
+      --max-context-length 32768
 ```
 
 ## 微调参数说明
@@ -182,10 +207,10 @@ model = AutoModelForCausalLM.from_pretrained(model_path)
 
 ```bash
 # 使用微调后的模型进行测试
-python experiment_natural.py --model finetune_output
+python main_natural.py --dataset mixed --model [微调后的模型名] --task reading_comprehension --max-samples 1000 --llm-backend vllm --vllm-url xxxxx --vllm-api-key xxxxx
 
 # 检测断崖点位置
-python detect_cliff_point.py --file results/mixed/xxx.json
+python detect_cliff_point.py --results-dir results/mixed --model [微调后的模型名] --dataset mixed --task reading_comprehension --metric f1
 
 # 对比微调前后的断崖点位置
 ```
