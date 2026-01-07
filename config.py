@@ -233,7 +233,7 @@ OLLAMA_CONFIG = {
 
 # vLLM配置
 VLLM_CONFIG = {
-    "base_url": "http://localhost:11434/v1",
+    "base_url": "http://localhost:8000/v1",
     "api_key": None,
     "timeout": 300
 }

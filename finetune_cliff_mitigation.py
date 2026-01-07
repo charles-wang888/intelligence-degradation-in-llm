@@ -693,7 +693,7 @@ def main():
     parser.add_argument("--num-epochs", type=int, default=3,
                        help="训练轮数")
     parser.add_argument("--grad-accum-steps", type=int, default=8,
-                       help="梯度累积步数（与 DeepSpeed 配置保持一致）")
+                       help="梯度累积步数")
     parser.add_argument("--critical-weight", type=float, default=3.0,
                        help="临界区域权重")
     parser.add_argument("--enable-rope-tuning", action="store_true",

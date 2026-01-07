@@ -3,6 +3,7 @@
 """
 
 from .ollama_client import OllamaClient, test_ollama_connection
+from .vllm_client import VLLMClient
 from .dataset_loader import (
     DatasetLoader,
     SQuADLoader,
@@ -22,6 +23,7 @@ from .evaluator import (
 __all__ = [
     "OllamaClient",
     "test_ollama_connection",
+    "VLLMClient",
     "DatasetLoader",
     "SQuADLoader",
     "MixedLoader",

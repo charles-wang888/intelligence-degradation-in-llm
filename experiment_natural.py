@@ -116,7 +116,7 @@ class NaturalLengthExperimentRunner:
 
         # 备用方法：近似估算
         # 英文: ~4 chars per token, 中文: ~1.5 chars per token
-        # 使用保守估计：2.5 chars per token
+        # 使用保守估计：2 chars per token
         return len(text) // 2
 
     def get_model_name(self, model_info: Dict, model_key: str) -> str:
