@@ -45,7 +45,7 @@ class NaturalLengthExperimentRunner:
         vllm_url: str = VLLM_CONFIG["base_url"],
         vllm_api_key: Optional[str] = None,
         llm_backend: str = "ollama",
-        dataset_name: str = None
+        dataset_name: Optional[str] = None
     ):
         """
         初始化实验运行器

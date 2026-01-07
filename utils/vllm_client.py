@@ -95,15 +95,15 @@ class VLLMClient:
                         text_chunk = delta.get("content") or delta.get("text")
                         if text_chunk:
                             full_response += text_chunk
-                return {"response": full_response, "done": True}
+                return {"response": full_response, "done": True, "raw": None}
 
             data = response.json()
             choices = data.get("choices", [])
             if not choices:
-                return {"response": "", "raw": data}
+                return {"response": "", "done": True, "raw": data}
             message = choices[0].get("message", {}) or choices[0].get("delta", {})
             content = message.get("content") or ""
-            return {"response": content, "raw": data}
+            return {"response": content, "done": True, "raw": data}
 
         except requests.exceptions.Timeout:
             logger.error(f"vLLM request timed out: model={model}, timeout={self.timeout}s")
