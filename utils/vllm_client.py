@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 class VLLMClient:
     """Minimal client for a vLLM OpenAI-compatible server."""
 
-    def __init__(self, base_url: str = "http://localhost:11434/v1", api_key: Optional[str] = None, timeout: int = 300):
+    def __init__(self, base_url: str = "http://localhost:8000/v1", api_key: Optional[str] = None, timeout: int = 300):
         """
         Args:
             base_url: Base URL of the vLLM server. Either with or without the trailing /v1.
